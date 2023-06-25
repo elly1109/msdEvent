@@ -22,8 +22,8 @@
     <link rel="stylesheet" href="{{asset('assets/css/line-awesome.min.css')}}">
 
     <!-- Chart CSS -->
-    <link rel="stylesheet" href="{{asset('assets/plugins/toastr/build/toastr.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/plugins/sweetalert/sweetalert.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/toastr.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/sweetalert.css')}}">
 
 
     <link rel="stylesheet" href="{{asset('assets/css/dataTables.bootstrap4.min.css')}}">
@@ -31,11 +31,11 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="{{asset('assets/css/select2.min.css')}}">
 
-    <link rel="stylesheet" href="{{asset('assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css')}}">
+    {{-- <link rel="stylesheet" href="{{asset('assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css')}}"> --}}
 
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap-datetimepicker.min.css')}}">
 
-    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/main/style.css')}}">
 </head>
 
 <body>
@@ -91,8 +91,8 @@
 <script src="{{asset('assets/js/app.js')}}"></script>
 <script src="{{asset('assets/js/inputmask.js')}}"></script>
 <script src="{{asset('assets/js/jquery.masknumber.js')}}"></script>
-<script src="{{asset('assets/plugins/toastr/build/toastr.min.js')}}"></script>
-<script src="{{asset('assets/plugins/sweetalert/sweetalert.min.js')}}"></script>
+<script src="{{asset('assets/js/toastr.min.js')}}"></script>
+<script src="{{asset('assets/js/sweetalert.min.js')}}"></script>
 {{-- <script src="{{asset('assets/js/role.js')}}"></script>
 <script src="{{asset('assets/js/auth.js')}}"></script> --}}
 

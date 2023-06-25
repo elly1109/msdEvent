@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\SupplierController;
+use App\Http\Controllers\EventController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,7 +31,7 @@ Route::group(['middleware' => 'auth'], function(){
     Route::get('logout',[AuthController::class,'logout']);
     Route::get('dashboard',[AuthController::class,'dashboard']);
     Route::get('suppliers',[SupplierController::class,'index']);
-    // Route::get('checkin-list',[EventController::class,'index']);
+    Route::get('checkin',[EventController::class,'index']);
 
 
 });

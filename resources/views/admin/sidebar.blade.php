@@ -7,12 +7,12 @@
                 </li>
                 {{-- @can('applyovertime') --}}
                  <li>
-                    <a href="{{url('suppliers')}}"><i class="la la-clock-o"></i> <span> Attendees</span></a>
+                    <a href="{{url('suppliers')}}"><i class="la la-users"></i> <span> Attendees</span></a>
                 </li>
                 {{-- @endcan --}}
 
                  <li>
-                    <a href="{{url('events')}}"><i class="la la-plane"></i> <span> Event</span></a>
+                    <a href="{{url('checkin')}}"><i class="la la-server"></i> <span> Event</span></a>
                 </li>
 
                 

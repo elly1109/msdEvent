@@ -19,8 +19,8 @@ class AuthController extends Controller
         
         if(Auth::check()){
             $suppliers = Supplier::count();
-            $checked = Event::where('checkedIn','=',1)->count();
-            $not_checked = Event::where('checkedIn','=',0)->count();
+            $checked = Event::where('checkedIn','=','1')->count();
+            $not_checked = Event::where('checkedIn','=','0')->count();
 
 
             return view('dashboard.home',compact('suppliers', 'checked','not_checked'));

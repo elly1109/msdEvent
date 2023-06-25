@@ -13,6 +13,11 @@ class Event extends Model
         'supplierId', 'checkIn' , 'orderNo'       
     ];
 
+    public function suppliers()
+    {
+        return $this->belongsTo(Supplier::class, 'supplierId','id');
+    }
+
     
     
 }

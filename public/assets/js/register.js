@@ -5,15 +5,30 @@ if((baseUrl=='http://localhost/')||(baseUrl=='https://localhost/')){
     baseUrl+= 'events/public/';
 }
 
-// var phoneInput = document.getElementById('phoneNo');
+var phoneInput = document.getElementById('phoneNo');
 
+phoneInput.addEventListener('input', function (e) {
+     var x = e.target.value.replace(/\D/g, '')
+.match(/(\d{0,2})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})(\d{0,3})/);
 
-// phoneInput.addEventListener('input', function (e) {
-//     var x = e.target.value.replace(/\D/g, '').match(/^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/)
-//     e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
-// });
+if (!x[1]) {
+    e.target.value = '+';
 
+    return;
+}
 
+if (!x[2]) {
+    e.target.value = `+${x[1]}`;
+
+    return;
+}
+
+e.target.value = `+${x[1]} (${x[2]}`
+    + ( x[3] ? `) ${x[3]}` : '' )
+    + ( x[4] ? `-${x[4]}` : '' )
+    + ( x[5] ? `-${x[5]}` : '' )
+    + ( x[6] ? `-${x[6]}` : '' );
+});
 
 
 jQuery(
@@ -40,7 +55,7 @@ $('#register-form').on('click', function(e) {
 
 
 
-    // $('#error-username,#error-password').html('');
+    $('#error-first-name,#error-last-name,#error-email,#error-phone-no,#error-title').html('');
     // $("#username-create,#password-create").addClass('has-success');
 
 
@@ -57,6 +72,14 @@ $('#register-form').on('click', function(e) {
         if(email == ''){
             // $("#password-create").addClass("has-error");
             $("#error-email").html("Please fill email");
+
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if(email.match(mailformat)){
+                return true;
+            }else{
+                $("#error-email").html("You have entered an invalid email address!");
+                return false;
+            }
             
         }
         if(phoneNo == ''){
@@ -77,9 +100,6 @@ $('#register-form').on('click', function(e) {
 
     }else{
         
-
-    //     $("#username-create,#password-create").addClass('has-success');
-    //     let token = null;
         $.ajax({
             type: "POST",
             url: baseUrl+"api/create-supplier",

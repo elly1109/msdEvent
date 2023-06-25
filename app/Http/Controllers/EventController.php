@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Event;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class EventController extends Controller
 {
@@ -14,6 +15,15 @@ class EventController extends Controller
     public function index()
     {
         //
+
+        $user = Auth::user();
+        if($user){
+
+            $checkIn = Event::with('suppliers')->get();
+            $z = 1;
+            return view('events.index',compact('checkIn','z'));    
+        }
+        return redirect('/');
     }
 
     /**

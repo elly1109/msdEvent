@@ -1,4 +1,4 @@
-@extends('role.files')
+@extends('events.files')
 
 @section('content')
 
@@ -25,8 +25,30 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="table-responsive">
-                        <span id="role-data">
-                        </span>
+                        <table class="table table-striped custom-table mb-0 datatable">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Name</th>
+                                    <th>OrderNo</th>
+                                    <th>Status</th>
+                                    {{-- <th>Action</th> --}}
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                @foreach ($checkIn as $chk)
+                                    <tr class="{{$chk['checkedIn'] == '0'? 'text-danger': 'text-success'}}">
+                                        <td>{{$z++}}</td>
+                                        <td>{{ $chk->suppliers->firstName.' '.$chk->suppliers->lastName }}</td>
+                                        <td>{{ $chk['orderNo'] }}</td>
+                                        <td>{{ $chk['checkedIn'] == '1'? 'Checked': 'Not Checked' }}</td>
+                                    </tr>
+                                @endforeach 
+
+                            </tbody>
+
+                        </table>
                     </div>
                 </div>
             </div>

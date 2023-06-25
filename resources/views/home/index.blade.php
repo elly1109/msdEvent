@@ -123,7 +123,7 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="https://www.msd.go.tz">
                     <img src="{{asset('assets/wp-content/uploads/event-logo3.png')}}" width="108" height="36" class="responsive-img logo-vis" alt="MSD Events" />
                 </a>
                 </div>
@@ -210,14 +210,14 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
                             <div class="col-sm-6">
                                 <div class="form-group" id="name1">
                                     <label>First Name <span class="text-danger">*</span> </label>
-                                    <input type="text" class="form-control" id="firstName" name="first_name" placeholder="First Name" required>
+                                    <input type="text" class="form-control" id="firstName" name="first_name" placeholder="First Name" autocomplete="off" required>
                                     <span class="text-danger text-muted" id="error-first-name"></span>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group" id="name2">
                                     <label>Last Name<span class="text-danger"> *</span></label>
-                                    <input type="text" class="form-control" id="lastName" name="last_name" placeholder="Last Name" required>
+                                    <input type="text" class="form-control" id="lastName" name="last_name" placeholder="Last Name" autocomplete="off" required>
                                     <span class="text-danger text-muted" id="error-last-name"></span>
 
                                 </div>
@@ -228,14 +228,14 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
                         <div class="form-group">
                             <div class="col-sm-8">
                             <label>Email Address<span class="text-danger"> *</span></label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" autocomplete="off" required>
                             <span class="text-danger text-muted" id="error-email"></span>
 
                             </div>
 
                             <div class="col-sm-4">
                                 <label>Gender<span class="text-danger"> *</span></label>
-                                 <select class="form-control" id="gender" name="gender" required>
+                                 <select class="form-control" id="gender" name="gender" autocomplete="off" required>
                                     <option value="">Choose...</option>
                                     @foreach (\App\Enums\GenderEnum::values() as $key => $value)
                                     <option value="{{ $key }}">{{ $value }}</option>
@@ -252,7 +252,7 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
                             <div class="form-group">
                                 <div class="col-sm-3">
                                 <label>Prefix</label>
-                                <select class="form-control" id="prefix" name="prefix" >
+                                <select class="form-control" id="prefix" name="prefix" autocomplete="off" >
                                     <option value="">Choose...</option>
                                     @foreach (\App\Enums\PrefixEnum::values() as $key => $value)
                                     <option value="{{ $key }}">{{ $value }}</option>
@@ -261,7 +261,7 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
                                 </div>
                                 <div class="col-sm-3">
                                     <label for="title">Suffix</label>
-                                    <select class="form-control" id="suffix" name="suffix" >
+                                    <select class="form-control" id="suffix" name="suffix" autocomplete="off" >
                                         <option value="">Choose...</option>
                                         @foreach (\App\Enums\SuffixEnum::values() as $key => $value)
                                         <option value="{{ $key }}">{{ $value }}</option>
@@ -269,7 +269,7 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
                                      </select>                                </div>
                                 <div class="col-sm-6">
                                     <label>Phone Number<span class="text-danger"> *</span></label>
-                                    <input type="text" class="form-control" id="phoneNo" name="phone" value="" placeholder="Phone Number">
+                                    <input type="text" class="form-control" id="phoneNo" name="phone" value="" placeholder="+00 (000) 000-00-00-000" autocomplete="off">
                                     <span class="text-danger text-muted" id="error-phone-no"></span>
                                     </div>
                             </div>
@@ -280,7 +280,7 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
                               
                                 <div class="col-sm-6">
                                     <label for="title">Job Title<span class="text-danger"> *</span></label>
-                                    <input type="text" class="form-control" id="title" name="title" placeholder="Title" required>
+                                    <input type="text" class="form-control" id="title" name="title" placeholder="Title" autocomplete="off" required>
                                 </div>
                             </div>
 
@@ -294,11 +294,11 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
                             <div class="form-group">
                             <div class="col-sm-7">
                                 <label>Company<span class="text-danger"> *</span></label>
-                                <input type="text" class="form-control" id="companyName" name="company" value="" placeholder="Company">
+                                <input type="text" class="form-control" id="companyName" name="company" value="" autocomplete="off" placeholder="Company">
                             </div>
                             <div class="col-sm-5">
                                 <label>Country<span class="text-danger"> *</span></label>
-                                <select class="form-control" id="countryId" name="country" required>
+                                <select class="form-control" id="countryId" name="country" autocomplete="off" required>
                                     <option value="">Choose...</option>
                                     @foreach ($nations as $nation)
                                     <option value="{{ $nation['id'] }}">{{ $nation['nicename'] }}</option>

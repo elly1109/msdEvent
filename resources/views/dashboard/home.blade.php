@@ -37,7 +37,7 @@
                             <span class="dash-widget-icon"><i class="la la-users" style="margin-top: 15px"></i></span>
                             <div class="dash-widget-info">
                                 <h3 id="checked">{{$checked}}</h3>
-                                <span>CheckIn</span>
+                                <span>Checked</span>
                             </div>
                         </div>
                     </div>
@@ -48,7 +48,7 @@
                             <span class="dash-widget-icon"><i class="la la-users" style="margin-top: 15px"></i></span>
                             <div class="dash-widget-info">
                                 <h3 id="not_checked">{{$not_checked}}</h3>
-                                <span>Absent</span>
+                                <span>Not Checked</span>
                             </div>
                         </div>
                     </div>
