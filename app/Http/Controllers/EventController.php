@@ -61,10 +61,12 @@ class EventController extends Controller
         <html>`;
 
         // dd($data);
+        // view()->share('suppliers.demo_mail', $data);
 
-        $pdf = PDF::loadView('suppliers.demo_mail',compact('data'))->output();
+        // $pdf = PDF::loadView('suppliers.demo_mail',compact('data'))->output();
 
-        return $pdf->download('pdf_file.pdf');
+        // return $pdf->download('pdf_file.pdf');
+        return view('suppliers.print_invoice',compact('data'));
     }
 
     /**

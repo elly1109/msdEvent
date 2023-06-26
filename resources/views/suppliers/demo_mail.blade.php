@@ -3,19 +3,35 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Laravel 9 Email PDF Attachment Example</title>
+        <meta name="author" content="DICTS">  
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+        <meta http-equiv="X-Frame-Options" content="DENY">
+        <meta name="robots" content="noindex">
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+            <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
+
+        <!-- Fontawesome CSS -->
+        <link rel="stylesheet" href="{{asset('assets/css/font-awesome.min.css')}}">
+
+        <!-- Lineawesome CSS -->
+        <link rel="stylesheet" href="{{asset('assets/css/line-awesome.min.css')}}">
     </head>
-    <body class="antialiased text-center">
-        <div class=" " style="width: 50%; height:80% align">
-            <h2>A demo mail sent from positronx.io</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non ligula ligula. </p>
+    <body class="antialiased ">
+        <div class="text-center" style="width: 50%;">
             <div class="card">
              <div class="card-header">
-                 <h2>Simple QR Code</h2>
+                 <h2>MSD Business Meeting</h2>
              </div>
              <div class="card-body">
-                <img src="data:image/png;base64,{!!QrCode::size(300)->generate('Eliya Masesa') !!}/>
+                <section>
+                    <div class="text-center">
+                        <p>{{$data->orderNo}}</p>
+                        <p>{{$data->suppliers->prefix.' '.$data->suppliers->firstName.' '.$data->suppliers->lastName}}</p>
+
+                    </div>
+                </section>
+                {!!QrCode::size(300)->generate($data->orderNo) !!}
              </div>
          </div>
 

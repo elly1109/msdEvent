@@ -67,11 +67,11 @@ class SupplierController extends Controller
             return $this->sendError('Validation Error',$data->errors(),403);  
         }
 
-        $sup = Supplier::where('email','=',$request['email'])->orWhere('phoneNumber','=', $request['phoneNumber'])->get(); 
+        // $sup = Supplier::where('email','=',$request['email'])->orWhere('phoneNumber','=', $request['phoneNumber'])->get(); 
 
-        if($sup){
-            return $this->sendError("This email is already used can't be registered twice.", [], 500);
-        }
+        // if($sup){
+        //     return $this->sendError("This email is already used can't be registered twice.", [], 500);
+        // }
 
         $supp = new Supplier();
         $supp->firstName = $request['firstName'];
@@ -105,7 +105,7 @@ class SupplierController extends Controller
 
             // Send an email to attendee.
             // $data = array('name'=>$supp->firstName .' '. $supp->lastName);
-            // $a["email"] = "eliyamasesa09.em@gmail.com";
+            // $a["email"] = "eliya.masesa@msd.com";
             // $a["title"] = "MSD Business Meeting";
             // $a["body"] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
      
