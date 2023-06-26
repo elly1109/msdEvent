@@ -18,10 +18,10 @@ $nations =  Nation::get();
         <link rel="pingback" href="xmlrpc.php" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-              
+        <meta http-equiv="X-Frame-Options" content="DENY">
         <link rel="shortcut icon" href="{{asset('favicon.ico')}}" type="image/x-icon"/>
                 <title>MSD &#8211; Chat &amp; Dine</title>
-<meta name='robots' content='max-image-preview:large' />
+<meta name='robots' content='noindex' />
 <link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
 <link rel='dns-prefetch' href='http://s.w.org/' />
 
@@ -457,7 +457,7 @@ Gather is a responsive event theme with many awesome features including add to m
         <h5 class="text-center text-muted"> To be Communicated Soon</h5>
     </div>
     <!-- Tab panes -->
-    {{-- <div class="tab-content">
+    <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="day-one">
             <section class="timeline">
                 <div class="timeline-block">
@@ -542,7 +542,7 @@ Gather is a responsive event theme with many awesome features including add to m
                 </div>
 
                         </section>
-    </div> --}}
+    </div>
 
 </div>
 
@@ -671,13 +671,13 @@ Gather is a responsive event theme with many awesome features including add to m
 
 
 	</div>
-
+{{-- 
     <div >
         <h5 class="text-muted text-center">To be communicated later</h5>
-    </div>
-{{-- <div class="sponsor-slider wow bounceIn" data-slick='{"slidesToShow":3,"arrows":false,"centerMode":true,"autoplay":true,"responsive":[{"breakpoint":768,"settings":{"arrows":false,"centerMode":true,"autoplay":true,"slidesToShow":3,"centerPadding":"40px"}},{"breakpoint":480,"settings":{"arrows":false,"centerMode":true,"autoplay":true,"slidesToShow":1,"centerPadding":"40px"}}]}'>
+    </div> --}}
+<div class="sponsor-slider wow bounceIn" data-slick='{"slidesToShow":3,"arrows":false,"centerMode":true,"autoplay":true,"responsive":[{"breakpoint":768,"settings":{"arrows":false,"centerMode":true,"autoplay":true,"slidesToShow":3,"centerPadding":"40px"}},{"breakpoint":480,"settings":{"arrows":false,"centerMode":true,"autoplay":true,"slidesToShow":1,"centerPadding":"40px"}}]}'>
     <div>
-            <a href="http://www.envato.com/" target="_blank">
+            <a href="http://www.msd.go.tz/" target="_blank">
                 <img width="197" height="69" src="{{asset('assets/wp-content/uploads/2015/05/sponsor_1.png')}}" class="img-responsive center-block" alt="" loading="lazy" />            </a>
         </div>
     <div>
@@ -708,7 +708,7 @@ Gather is a responsive event theme with many awesome features including add to m
             <a href="https://web3canvas.com/" target="_blank">
                 <img width="258" height="69" src="{{asset('assets/wp-content/uploads/2015/05/sponsor_41.png')}}" class="img-responsive center-block" alt="" loading="lazy" />            </a>
         </div>
-</div> --}}
+</div>
 </div></div></div>        </div>
     </div>
     <!-- end .container -->

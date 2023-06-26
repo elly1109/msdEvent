@@ -25,7 +25,8 @@ class AuthController extends Controller
 
             return view('dashboard.home',compact('suppliers', 'checked','not_checked'));
         }
-    }
+        return redirect('/');
+        }
 
     public function login(Request $request){
             $this->validate($request,[

@@ -66,7 +66,13 @@ class SupplierController extends Controller
         if($data->fails()){
             return $this->sendError('Validation Error',$data->errors(),403);  
         }
-    
+
+        $sup = Supplier::where('email','=',$request['email'])->orWhere('phoneNumber','=', $request['phoneNumber'])->get(); 
+
+        if($sup){
+            return $this->sendError("This email is already used can't be registered twice.", [], 500);
+        }
+
         $supp = new Supplier();
         $supp->firstName = $request['firstName'];
         $supp->lastName = $request['lastName'];
@@ -87,7 +93,7 @@ class SupplierController extends Controller
             $order_number = Event::max('orderNo');
             $count = (int) substr($order_number, 3);
         
-            $order_no = 'MSD' . Str::padLeft($count + 1, 5, '0');
+            $order_no = 'MSD' . Str::padLeft($count + 1, 4, '0');
 
             $checkIn = new Event();
 

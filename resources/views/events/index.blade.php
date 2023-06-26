@@ -12,7 +12,7 @@
                     <div class="col">
                         <h3 class="page-title">Attendees Check IN</h3>
                         <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="{{url('dashboard')}}">Dashboard</a></li>
                             <li class="breadcrumb-item active">Check IN</li>
                         </ul>
                     </div>
@@ -40,7 +40,7 @@
                                 @foreach ($checkIn as $chk)
                                     <tr class="{{$chk['checkedIn'] == '0'? 'text-danger': 'text-success'}}">
                                         <td>{{$z++}}</td>
-                                        <td>{{ $chk->suppliers->firstName.' '.$chk->suppliers->lastName }}</td>
+                                        <td>{{ $chk->suppliers->prefix.' '.$chk->suppliers->firstName.' '.$chk->suppliers->lastName.' '.$chk->suppliers->suffix }}</td>
                                         <td>{{ $chk['orderNo'] }}</td>
                                         <td>{{ $chk['checkedIn'] == '1'? 'Checked': 'Not Checked' }}</td>
                                     </tr>

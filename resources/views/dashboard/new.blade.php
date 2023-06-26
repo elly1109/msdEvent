@@ -6,6 +6,7 @@
     <meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects">
     <meta name="author" content="DICTS">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta http-equiv="X-Frame-Options" content="DENY">
     <meta name="robots" content="noindex, nofollow">
     <title>Dashboard</title>
 

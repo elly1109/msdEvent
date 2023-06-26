@@ -21,7 +21,7 @@ Route::get('/', function () {
 
 Route::get('auth', function () {
     return view('auth.login');
-});
+})->name('auth');
 
 
 Route::post('auth/login',[AuthController::class,'login']);
@@ -32,6 +32,7 @@ Route::group(['middleware' => 'auth'], function(){
     Route::get('dashboard',[AuthController::class,'dashboard']);
     Route::get('suppliers',[SupplierController::class,'index']);
     Route::get('checkin',[EventController::class,'index']);
+    Route::get('qrcode/{id}',[EventController::class,'download']);
 
 
 });

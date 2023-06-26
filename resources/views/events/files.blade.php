@@ -6,7 +6,9 @@
     <meta name="keywords" content="MSD Events">
     <meta name="author" content="DICTS">  
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="robots" content="MSD">
+    <meta name="robots" content="noindex">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+
     <title>Check IN</title>
 
     <!-- Favicon -->
