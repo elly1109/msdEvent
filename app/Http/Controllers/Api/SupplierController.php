@@ -103,24 +103,24 @@ class SupplierController extends Controller
 
 
 
-            // Send an email to attendee.
-            // $data = array('name'=>$supp->firstName .' '. $supp->lastName);
+            // // Send an email to attendee.
+            // $dd = array('name'=>$supp->firstName .' '. $supp->lastName);
             // $a["email"] = "eliya.masesa@msd.com";
             // $a["title"] = "MSD Business Meeting";
             // $a["body"] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
      
-            // $files = [
-            //     public_path('attachments/demo.jpeg'),
-            //     public_path('attachments/tariff_rates.pdf'),
-            // ];
+            // // $files = [
+            // //     public_path('attachments/demo.jpeg'),
+            // //     public_path('attachments/tariff_rates.pdf'),
+            // // ];
       
-            // Mail::send('suppliers.demo_mail', $a, function($message)use($a, $files) {
+            // Mail::send('suppliers.demo_mail', $a, function($message)use($a) {
             //     $message->to($a["email"])
             //             ->subject($a["title"]);
 
-            // foreach ($files as $file){
-            //     $message->attach($file);
-            // }    
+            // // foreach ($files as $file){
+            // //     $message->attach($file);
+            // // }    
 
             // });
 

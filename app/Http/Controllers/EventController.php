@@ -36,6 +36,8 @@ class EventController extends Controller
         //
 
         $data = Event::where('supplierId','=',$id)->first();
+
+        // dd($data);
         $pdf_view = `<html>
         <body class="antialiased text-center">
         <head>
@@ -61,7 +63,7 @@ class EventController extends Controller
         <html>`;
 
         // dd($data);
-        // view()->share('suppliers.demo_mail', $data);
+        // view()->share('suppliers.print_invoice', $data);
 
         // $pdf = PDF::loadView('suppliers.demo_mail',compact('data'))->output();
 

@@ -26,12 +26,12 @@
              <div class="card-body">
                 <section>
                     <div class="text-center">
-                        <p>{{$data->orderNo}}</p>
-                        <p>{{$data->suppliers->prefix.' '.$data->suppliers->firstName.' '.$data->suppliers->lastName}}</p>
+                        {{-- <p>{{$data->orderNo}}</p> --}}
+                        {{-- <p>{{$data->suppliers->prefix.' '.$data->suppliers->firstName.' '.$data->suppliers->lastName}}</p> --}}
 
                     </div>
                 </section>
-                {!!QrCode::size(300)->generate($data->orderNo) !!}
+                {{-- {!!QrCode::size(300)->generate($data->orderNo) !!} --}}
              </div>
          </div>
 

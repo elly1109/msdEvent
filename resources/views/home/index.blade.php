@@ -307,10 +307,10 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
                             </div>
                             </div> 
                         </div>
-                                                {{-- <div class="available-seats">
-                            <p>Only <strong>1931</strong> seats are available.</p>                        </div>
+                    <div class="available-seats">
+                            <p>Only <strong>250</strong> seats are available.</p>                        </div>
                     <div class="row">
-                             --}}
+                            
                      </div>
                                                     
                         
@@ -380,8 +380,7 @@ TIP: You can change your event time below in the Same Format.  -->
 	    			<var class="atc_title">MSD Business Meeting</var>
 		
 	    			<var class="atc_description">
-Gather is a responsive event theme with many awesome features including add to my calendar feature. Awesome. huh?
-</var>
+                        This Business Meeting shall focus on promoting and solidifying better partnerships and cooperation among stakeholders (removing barriers), improving pharmaceutical business services in the country, and strengthening the health commodities supply chain.</var>
 		
 	    			<var class="atc_location">Johari Rotana, Dar es salaam</var>
 		
@@ -453,9 +452,7 @@ Gather is a responsive event theme with many awesome features including add to m
                 </ul>
     </div>
 
-    <div class="tab-content">
-        <h5 class="text-center text-muted"> To be Communicated Soon</h5>
-    </div>
+
     <!-- Tab panes -->
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="day-one">
