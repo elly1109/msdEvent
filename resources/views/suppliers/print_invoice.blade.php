@@ -1,8 +1,9 @@
 
 <?php
 use Dompdf\Dompdf;
+// use QrCode;
 
-// $qrcode = base64_encode(QrCode::format('png')->size(100)->generate('Make me into an QrCode!'));
+$qrcode = base64_encode(QrCode::size(100)->generate('Make me into an QrCode!'));
 
 $html = '
     <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
@@ -17,7 +18,11 @@ $html = '
                 page-break-before: always;
             }
           
-            body {font-family: Arial, Helvetica, sans-serif;  font-size: 11px;}
+            body {
+				
+				font-family: Arial, Helvetica, sans-serif;  font-size: 11px;
+
+			}
 
             .ticket-wrap {
 	text-align: center;
@@ -163,7 +168,7 @@ $html = '
 	}
 
 	.ticket__body {
-		padding: 3rem 2em 2em;
+		padding: 2rem 2em 2em;
 	}
 
 	.ticket__detail {
@@ -202,7 +207,6 @@ $html = '
     <div class="ticket__header">
       <div class="ticket__co">
         <span class="ticket__co-name">MSD Business Meeting</span>
-        <span class="u-upper ticket__co-subname">Ticket #: '.$data->orderNo.'</span>
       </div>
     </div>
     <div class="ticket__body">
@@ -224,7 +228,10 @@ $html = '
         </p>
       </div>
       <div class="ticket__barcode">
-      <img src="https://external-preview.redd.it/cg8k976AV52mDvDb5jDVJABPrSZ3tpi1aXhPjgcDTbw.png?auto=webp&s=1c205ba303c1fa0370b813ea83b9e1bddb7215eb" alt="QR code">
+		<img src="data:image/png;base64, '.$qrcode.'">
+		<p class="ticket-number">
+				# '.$data->orderNo.'
+			</p>
       </div>
       </div>
       <p class="ticket__fine-print">This ticket cannot be transferred to another voyage</p>
@@ -254,9 +261,9 @@ $dompdf->render();
 
 $font = $dompdf->getFontMetrics()->get_font("helvetica","normal");
 $dompdf->getCanvas()->page_text(503, 800, "Page {PAGE_NUM} of {PAGE_COUNT}", $font, 7, array(.16, .16, .16), 0.0, 0.0, 0.0);
-// $dompdf->getCanvas()->page_text(400, 810, "Printed Date - ".date('M d, Y H:i:s',strtotime('+3 hours')), $font, 9, array(.16, .16, .16), 0.0, 0.0, 0.0);
-// $dompdf->getCanvas()->page_text(56, 790, "_____________________________________________________________________________________________________________________________", $font, 7, array(.16, .16, .16), 0.0, 0.0, 0.0);
-// $dompdf->getCanvas()->page_text(56, 800, "© Medical Stores Department | powered by DICTS | Printed on ".date('M d, Y H:i:s'), $font, 7, array(.16, .16, .16), 0.0, 0.0, 0.0);
+$dompdf->getCanvas()->page_text(400, 810, "Printed Date - ".date('M d, Y H:i:s',strtotime('+3 hours')), $font, 9, array(.16, .16, .16), 0.0, 0.0, 0.0);
+$dompdf->getCanvas()->page_text(56, 790, "_____________________________________________________________________________________________________________________________", $font, 7, array(.16, .16, .16), 0.0, 0.0, 0.0);
+$dompdf->getCanvas()->page_text(56, 800, "© Medical Stores Department | powered by DICTS | Printed on ".date('M d, Y H:i:s'), $font, 7, array(.16, .16, .16), 0.0, 0.0, 0.0);
 
 
 // Output the generated PDF to Browser

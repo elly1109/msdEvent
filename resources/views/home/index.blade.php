@@ -342,7 +342,7 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
 	<div class="wpb_text_column wpb_content_element " >
 		<div class="wpb_wrapper">
 			<p class="lead text-center">
-                This Business Meeting shall focus on promoting and solidifying better partnerships and cooperation among stakeholders (removing barriers), improving pharmaceutical business services in the country, and strengthening the health commodities supply chain. On the other hand, MSD is currently championing the establishment of pharmaceutical industries in Tanzania, through its recently registered company (MSD Medipharm Manufacturing Company Limited), hence the meeting will also be aimed at fostering Public - Private Partnerships Programs and Projects Sustainability for the Tanzania Pharmaceutical industry.
+                This Business Meeting brings together both 60 local and 150 international manufacturers/ suppliers/ authorized dealers to discuss ways on how to promote and solidify better partnerships and cooperation among stakeholders (removing barriers), improving pharmaceutical business services in the country, and strengthening the health commodities supply chain. On the other hand, MSD is currently championing the establishment of pharmaceutical industries in Tanzania, through its recently registered company (MSD Medipharm Manufacturing Company Limited), hence the meeting will also be aimed at fostering Public - Private Partnerships Programs and Projects Sustainability for the Tanzania Pharmaceutical industry.
             </p>
 
 		</div>
@@ -462,8 +462,8 @@ TIP: You can change your event time below in the Same Format.  -->
                     </div>
                     <!-- timeline-bullet -->
                     <div class="timeline-content">
-                        <h2 class="wow flipInX" data-wow-delay="0.3s">Breakfast</h2>
-                        <span class="date wow flipInX" data-wow-delay="0.3s">08:00 AM</span>
+                        <h2 class="wow flipInX" data-wow-delay="0.3s">Arrival</h2>
+                        <span class="date wow flipInX" data-wow-delay="0.3s">18:00</span>
                     </div>
                     <!-- timeline-content -->
                 </div>
@@ -473,9 +473,21 @@ TIP: You can change your event time below in the Same Format.  -->
                     </div>
                     <!-- timeline-bullet -->
                     <div class="timeline-content">
-                        <h2 class="wow flipInX" data-wow-delay="0.3s">Gathering &#038; Welcome Speech</h2>
-                                            <p class="wow flipInX" data-wow-delay="0.3s">by Jamie Hefford</p>
-                                                                                    <span class="date wow flipInX" data-wow-delay="0.3s">09:00 AM</span>
+                        <h2 class="wow flipInX" data-wow-delay="0.3s">Opening &#038; Welcome Note</h2>
+                        <p class="wow flipInX" data-wow-delay="0.3s">by Mavere Tukai</p>
+                        <span class="date wow flipInX" data-wow-delay="0.3s">18:30</span>
+                    </div>
+                    <!-- timeline-content -->
+                </div>
+
+                                                            <div class="timeline-block">
+                    <div class="timeline-bullet wow zoomIn" data-wow-delay="0s">
+                    </div>
+                    <!-- timeline-bullet -->
+                    <div class="timeline-content">
+                        <h2 class="wow flipInX" data-wow-delay="0.3s">Word from Guest of Honor</h2>
+                                            <p class="wow flipInX" data-wow-delay="0.3s">by Guest of Honor</p>
+                                                                                    <span class="date wow flipInX" data-wow-delay="0.3s">18:00</span>
                                         </div>
                     <!-- timeline-content -->
                 </div>
@@ -485,9 +497,9 @@ TIP: You can change your event time below in the Same Format.  -->
                     </div>
                     <!-- timeline-bullet -->
                     <div class="timeline-content">
-                        <h2 class="wow flipInX" data-wow-delay="0.3s">Getting back into the deliverables business</h2>
-                                            <p class="wow flipInX" data-wow-delay="0.3s">by George Burton</p>
-                                                                                    <span class="date wow flipInX" data-wow-delay="0.3s">10:00 AM</span>
+                        <h2 class="wow flipInX" data-wow-delay="0.3s">Discussion &#038; Presentation</h2>
+                                            <p class="wow flipInX" data-wow-delay="0.3s">by Ally Nampair</p>
+                                                                                    <span class="date wow flipInX" data-wow-delay="0.3s">19:00 PM</span>
                                         </div>
                     <!-- timeline-content -->
                 </div>
@@ -497,44 +509,44 @@ TIP: You can change your event time below in the Same Format.  -->
                     </div>
                     <!-- timeline-bullet -->
                     <div class="timeline-content">
-                        <h2 class="wow flipInX" data-wow-delay="0.3s">Successful Marketing Strategy</h2>
-                                            <p class="wow flipInX" data-wow-delay="0.3s">by Carol Wood</p>
-                                                                                    <span class="date wow flipInX" data-wow-delay="0.3s">12:30 PM</span>
+                        <h2 class="wow flipInX" data-wow-delay="0.3s">Word from Sponsors</h2>
+                        <p class="wow flipInX" data-wow-delay="0.3s">by Representatives</p>
+
+                                                                                    <span class="date wow flipInX" data-wow-delay="0.3s">20:30</span>
                                         </div>
                     <!-- timeline-content -->
                 </div>
 
-                                                            <div class="timeline-block">
+                <div class="timeline-block">
                     <div class="timeline-bullet wow zoomIn" data-wow-delay="0s">
                     </div>
                     <!-- timeline-bullet -->
                     <div class="timeline-content">
-                        <h2 class="wow flipInX" data-wow-delay="0.3s">Lunch</h2>
-                                                                                    <span class="date wow flipInX" data-wow-delay="0.3s">01:30 PM</span>
+                        <h2 class="wow flipInX" data-wow-delay="0.3s">Vote of thanks</h2>
+                                            <p class="wow flipInX" data-wow-delay="0.3s">by Mavere Tukai</p>
+                                                                                    <span class="date wow flipInX" data-wow-delay="0.3s">20:50 </span>
                                         </div>
                     <!-- timeline-content -->
                 </div>
 
-                                                            <div class="timeline-block">
+                    <div class="timeline-block">
                     <div class="timeline-bullet wow zoomIn" data-wow-delay="0s">
                     </div>
                     <!-- timeline-bullet -->
                     <div class="timeline-content">
-                        <h2 class="wow flipInX" data-wow-delay="0.3s">Predict the future with an old trick</h2>
-                                            <p class="wow flipInX" data-wow-delay="0.3s">by Cody Nesbit</p>
-                                                                                    <span class="date wow flipInX" data-wow-delay="0.3s">03:00 PM</span>
-                                        </div>
+                        <h2 class="wow flipInX" data-wow-delay="0.3s">Main Food</h2>
+                        <span class="date wow flipInX" data-wow-delay="0.3s">21:00 </span>
+                    </div>
                     <!-- timeline-content -->
                 </div>
-
-                                                            <div class="timeline-block">
+                    <div class="timeline-block">
                     <div class="timeline-bullet wow zoomIn" data-wow-delay="0s">
                     </div>
                     <!-- timeline-bullet -->
                     <div class="timeline-content">
-                        <h2 class="wow flipInX" data-wow-delay="0.3s">Closing Thoughts</h2>
-                                                                                    <span class="date wow flipInX" data-wow-delay="0.3s">06:00 PM</span>
-                                        </div>
+                        <h2 class="wow flipInX" data-wow-delay="0.3s">Closing</h2>
+                        <span class="date wow flipInX" data-wow-delay="0.3s">21:30</span>
+                    </div>
                     <!-- timeline-content -->
                 </div>
 
@@ -722,7 +734,7 @@ TIP: You can change your event time below in the Same Format.  -->
 <p>MSD Business Meeting</p>
 <p class="no-rep">Johari Rotana, Meet n Party,</p>
 <p>Sokoine Drive, Dar es Salaam</p>
-<p>Time: 06:00 PM to 09:30 PM</p>
+<p>Time: 18:00 to 21:30 Hrs</p>
 </div>
 
 		</div>

@@ -32,7 +32,7 @@
                                     <th>Name</th>
                                     <th>OrderNo</th>
                                     <th>Status</th>
-                                    {{-- <th>Action</th> --}}
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -43,6 +43,10 @@
                                         <td>{{ $chk->suppliers->prefix.' '.$chk->suppliers->firstName.' '.$chk->suppliers->lastName.' '.$chk->suppliers->suffix }}</td>
                                         <td>{{ $chk['orderNo'] }}</td>
                                         <td>{{ $chk['checkedIn'] == '1'? 'Checked': 'Not Checked' }}</td>
+                                        <td>
+                                            <a href="{{ url('qrcode/'.$chk['supplierId'].'')}}" data-original-title="download"><i class="fa fa-download text-navy"></i></a>
+                                            <a href="#"><i class="fa fa-edit text-warning"></i></a>
+                                        </td>
                                     </tr>
                                 @endforeach 
 
