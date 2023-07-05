@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\SupplierController;
 use App\Http\Controllers\EventController;
+use Illuminate\Support\Facades\Mail;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,6 +27,8 @@ Route::get('auth', function () {
 
 
 Route::post('auth/login',[AuthController::class,'login']);
+
+
 
 
 Route::group(['middleware' => 'auth'], function(){

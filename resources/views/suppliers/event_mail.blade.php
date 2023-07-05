@@ -16,22 +16,41 @@
 
         <!-- Lineawesome CSS -->
         <link rel="stylesheet" href="{{asset('assets/css/line-awesome.min.css')}}">
+
+        <style>
+            .context{
+                background-color: #fff;
+            }
+
+            body{
+                font-family: Arial, Helvetica, sans-serif;  font-size: 11px;
+                background-color: #e4e3e3
+
+            }
+        </style>
     </head>
     <body class="antialiased ">
         <div class="text-center" style="width: 50%;">
-            <div class="card">
+            <div class="card context">
              <div class="card-header">
-                 <h2>MSD Business Meeting</h2>
+                 <h2>{{ $details['title'] }}</h2>
              </div>
              <div class="card-body">
                 <section>
                     <div class="text-center">
-                        {{-- <p>{{$data->orderNo}}</p> --}}
-                        {{-- <p>{{$data->suppliers->prefix.' '.$data->suppliers->firstName.' '.$data->suppliers->lastName}}</p> --}}
+
+                        <p class="text-muted">ticket # {{$details['orderNumber']}}</p>
+                        <h3>Hi {{$details['name']}},</h3>
+                        <p>Thanks for registering to attend MSD 2023 Business Meeting, This Business Meeting shall focus on promoting and solidifying better partnerships and cooperation among stakeholders (removing barriers), improving pharmaceutical business services in the country, and strengthening the health commodities supply chain.</p>
+
+                        <p>For more information about this event, please check out the <a href="https://event.msd.go.tz" >Chat & Dine website</a> </p>
+
+                        <p>Cheers,</p>
+                        <img src="https://portal.msd.go.tz/web/images/msd_login_logo.png" alt="msd" >
+                        <p>Chat & Dine Committee</p>
 
                     </div>
                 </section>
-                {{-- {!!QrCode::size(300)->generate($data->orderNo) !!} --}}
              </div>
          </div>
 

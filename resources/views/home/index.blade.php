@@ -18,7 +18,6 @@ $nations =  Nation::get();
         <link rel="pingback" href="xmlrpc.php" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <meta http-equiv="X-Frame-Options" content="DENY">
         <link rel="shortcut icon" href="{{asset('favicon.ico')}}" type="image/x-icon"/>
                 <title>MSD &#8211; Chat &amp; Dine</title>
 <meta name='robots' content='noindex' />
@@ -42,7 +41,12 @@ img.emoji {
 	vertical-align: -0.1em !important;
 	background: none !important;
 	padding: 0 !important;
-}
+},
+
+.loading-spinner {
+      /* CSS class styles */
+      margin: 0 auto;
+    }
 </style>
 	<link rel='stylesheet' id='wp-block-library-css'  href='{{asset("assets/wp-includes/css/dist/block-library/style.min38d6.css?ver=5.8.7")}}' type='text/css' media='all' />
 <link rel='stylesheet' id='wc-blocks-vendors-style-css'  href='{{asset("assets/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-styled03b.css?ver=5.5.1")}}' type='text/css' media='all' />
@@ -110,19 +114,19 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
 <style type="text/css" data-type="vc_shortcodes-custom-css">
 .vc_custom_1438967681859{padding-top: 30px !important;padding-bottom: 30px !important;background-color: #f1f1f1 !important;}.vc_custom_1439695273628{padding-top: 30px !important;padding-bottom: 30px !important;background-color: #f1f1f1 !important;}.vc_custom_1439565235098{margin-bottom: 60px !important;}.vc_custom_1438967681859{padding-top: 30px !important;padding-bottom: 30px !important;background-color: #f1f1f1 !important;}.vc_custom_1439048350503{margin-top: 40px !important;margin-bottom: 40px !important;}.vc_custom_1438967681859{padding-top: 30px !important;padding-bottom: 30px !important;background-color: #f1f1f1 !important;}.vc_custom_1440596846019{padding-top: 60px !important;background-color: #f1f1f1 !important;}.vc_custom_1502006119553{margin-bottom: 50px !important;}.vc_custom_1439565923500{margin-bottom: 40px !important;}.vc_custom_1439047012296{padding-right: 0px !important;padding-left: 0px !important;}.vc_custom_1439045082403{margin-bottom: 40px !important;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>    </head>
     <body class="home page-template page-template-homepage-onepage page-template-homepage-onepage-php page page-id-525 theme-gather gather-has-addons woocommerce-no-js gather-body-classes animate-page shop-three-cols shop-tablet-three-cols wpb-js-composer js-comp-ver-6.7.0 vc_responsive" data-spy="scroll" data-target="#navbar" data-offset="100">
-                <div class="preloader"></div>  
+                {{-- <div class="preloader"></div>  --}}
+                
+                {{-- <div id="loading-spinner" class="loading-spinner">
+                    <img src="{{ asset('assets/loader.gif') }}" alt="Loading" />
+                  </div> --}}
+                
          
 
         <!-- Fixed navbar -->
         <nav class="navbar navbar-default navbar-fixed-top reveal-menu js-reveal-menu reveal-menu-hidden">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+                   
                     <a class="navbar-brand" href="https://www.msd.go.tz">
                     <img src="{{asset('assets/wp-content/uploads/event-logo3.png')}}" width="108" height="36" class="responsive-img logo-vis" alt="MSD Events" />
                 </a>
@@ -349,8 +353,7 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
 	</div>
 <div class="countdown_wrap ">
     <h6 class="countdown_title text-center">EVENT WILL START IN</h6>
-    <!-- Countdown JS for the Event Date Starts here.
-TIP: You can change your event time below in the Same Format.  -->
+    {{-- TIP: You can change your event time below in the Same Format.  --> --}}
     <ul class="countdown" data-event-date="21 July 2023 18:00:00">
         <li class="wow zoomIn" data-wow-delay="0s"> <span class="days">00</span>
             <p class="timeRefDays">days</p>
@@ -365,7 +368,7 @@ TIP: You can change your event time below in the Same Format.  -->
             <p class="timeRefSeconds">seconds</p>
         </li>
     </ul>
-</div><div class="text-center ">
+</div><div class="text-center">
 <!-- Add to Calendar Plugin. 
 	     For Customization, Visit https://addtocalendar.com/ -->
 	<span class="addtocalendar atc-style-theme">
@@ -609,7 +612,7 @@ TIP: You can change your event time below in the Same Format.  -->
 	<div class="wpb_text_column wpb_content_element " >
 		<div class="wpb_wrapper">
 			<div class="thumbnail">
-<p><img loading="lazy" class="aligncenter wp-image-1373 size-full" src="wp-content/uploads/2015/05/hotel_3.jpg" alt="hotel_3" width="360" height="240" srcset="https://lh3.googleusercontent.com/qlz8vAa8zlGtMaHa0pLhl8AfDmSeOoANcqH5ILmy6JCDPKA4gxRf307USWFH9Ayb3VoUvJzoZnjIOPB6aihjqy3EXGQ8npFY7DBBQ-Y68Q 360w, https://lh3.googleusercontent.com/qlz8vAa8zlGtMaHa0pLhl8AfDmSeOoANcqH5ILmy6JCDPKA4gxRf307USWFH9Ayb3VoUvJzoZnjIOPB6aihjqy3EXGQ8npFY7DBBQ-Y68Q 300w" sizes="(max-width: 360px) 100vw, 360px" /></p>
+<p><img loading="lazy" class="aligncenter wp-image-1373 size-full" src="{{asset('assets/wp-content/uploads/serena.jpg')}}" alt="hotel_3" width="360" height="240" srcset="https://lh3.googleusercontent.com/qlz8vAa8zlGtMaHa0pLhl8AfDmSeOoANcqH5ILmy6JCDPKA4gxRf307USWFH9Ayb3VoUvJzoZnjIOPB6aihjqy3EXGQ8npFY7DBBQ-Y68Q 360w, https://lh3.googleusercontent.com/qlz8vAa8zlGtMaHa0pLhl8AfDmSeOoANcqH5ILmy6JCDPKA4gxRf307USWFH9Ayb3VoUvJzoZnjIOPB6aihjqy3EXGQ8npFY7DBBQ-Y68Q 300w" sizes="(max-width: 360px) 100vw, 360px" /></p>
 <div class="caption">
 <h6 class="caption-title">Serena Hotels</h6>
 <p class="caption-text">From $145 per night</p>
@@ -870,10 +873,8 @@ TIP: You can change your event time below in the Same Format.  -->
             var subscribe_ajax = {"url":"https:\/\/gather.cththemes.org\/wp-admin\/admin-ajax.php","site_url":"https:\/\/gather.cththemes.org\/","theme_url":"https:\/\/gather.cththemes.org\/wp-content\/themes\/gather","email_validate":"Please enter your email address","pl_w":"Please wait..."};
             /*]]> */
         </script>
-        <script type='text/javascript' src='{{asset("assets/wp-content/themes/gather/assets/js/includes/subscribe.min.js")}}' id='gathersubscribe-js-js'></script>
+        {{-- <script type='text/javascript' src='{{asset("assets/wp-content/themes/gather/assets/js/includes/subscribe.min.js")}}' id='gathersubscribe-js-js'></script> --}}
         <script type='text/javascript' src='{{asset("assets/wp-content/themes/gather/assets/js/plugins/directions.js")}}' id='gatherdirections-js-js'></script>
-        <script src='{{asset("assets/wp-content/themes/gather/assets/js/plugins/style-switcher.js")}}'></script>	
 </body>
 
-<!-- Mirrored from gather.cththemes.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 09 Jun 2023 11:45:57 GMT -->
 </html>
