@@ -23,9 +23,6 @@ if (!x[2]) {
     return;
 }
 
-
-
-
 e.target.value = `+${x[1]} (${x[2]}`
     + ( x[3] ? `) ${x[3]}` : '' )
     + ( x[4] ? `-${x[4]}` : '' )
@@ -34,15 +31,43 @@ e.target.value = `+${x[1]} (${x[2]}`
 });
 
 
-
-
-
 jQuery(
 function($){
 
+$('#firstName').keyup(function(e){
+    var x = e.target.value.replace(/[^A-Za-z0-9]/g, "")
+    e.target.value =  x[0].toUpperCase() + x.slice(1);
+    return;
+});
+$('#lastName').keyup(function(e){
+    var x = e.target.value.replace(/[^A-Za-z0-9]/g, "")
+    e.target.value =  x[0].toUpperCase() + x.slice(1);
+    return;
+});
+$('#title').keyup(function(e){
+    var x = e.target.value.replace(/[^A-Za-z0-9]/g, "")
+    e.target.value =  x[0].toUpperCase() + x.slice(1);
+    return;
+});
+
+$('#companyName').keyup(function(e){
+    var x = e.target.value
+    e.target.value =  x[0].toUpperCase() + x.slice(1);
+    return;
+});
+
+$('#email').keyup(function(e){
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    var x = e.target.value.match(mailformat);
+    if (x){
+        $("#error-email").html("");
+    }else{
+        $("#error-email").html("You have entered an invalid email address!");
+    }
+});
+
 $('#register-form').on('click', function(e) {
     e.preventDefault();
-    // console.log(e.target)
 
     let firstName = $('#firstName').val();
     let lastName = $('#lastName').val();
@@ -55,28 +80,19 @@ $('#register-form').on('click', function(e) {
     let prefix = $('#prefix').val();
     let suffix = $('#suffix').val();
 
-
-
-
-
-
-
     $('#error-first-name,#error-last-name,#error-email,#error-phone-no,#error-title').html('');
     // $("#username-create,#password-create").addClass('has-success');
 
 
-    if(firstName == '' || lastName == '' || email == '' || phoneNo == '' || gender == '' || countryId == '' || title == ''){
+    if(firstName == '' || lastName == '' || email == '' || phoneNo == '' || gender == '' || countryId == '' || title == '' || companyName == ''){
 
         if(firstName == ''){
-            // $("#username-create").addClass("has-error");
             $("#error-first-name").html("Please fill first name");
         }
         if(lastName == ''){
-            // $("#password-create").addClass("has-error");
             $("#error-last-name").html("Please fill last name");
         }
         if(email == ''){
-            // $("#password-create").addClass("has-error");
             $("#error-email").html("Please fill email");
 
             var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -89,19 +105,13 @@ $('#register-form').on('click', function(e) {
             
         }
         if(phoneNo == ''){
-            // $("#password-create").addClass("has-error");
-            $("#error-phone-no").html("Please fill phone number");
-            // var phoneno = /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
-            // if(phoneNo.match(phoneno)){
-            //     return true;
-            // }else {
-            //     alert("message");
-            //     return false;
-            // }
+            $("#error-phone-no").html("Please fill phone number");  
         }
         if(title == ''){
-            // $("#password-create").addClass("has-error");
             $("#error-title").html("Please fill job title");
+        }
+        if(companyName == ''){
+            $("#error-company").html("Please fill company name");
         }
 
     }else{
@@ -136,7 +146,7 @@ $('#register-form').on('click', function(e) {
                 swal({
                     title: "Technical Error",
                     type:"error",
-                    text: "Please contact us",
+                    text: "Please contact us through info@msd.go.tz",
                     showConfirmButton: true,
                     allowEscapeKey: true
                 });

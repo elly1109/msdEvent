@@ -285,6 +285,8 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
                                 <div class="col-sm-6">
                                     <label for="title">Job Title<span class="text-danger"> *</span></label>
                                     <input type="text" class="form-control" id="title" name="title" placeholder="Title" autocomplete="off" required>
+                                    <span class="text-danger text-muted" id="error-title"></span>
+                                   
                                 </div>
                             </div>
 
@@ -299,6 +301,7 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
                             <div class="col-sm-7">
                                 <label>Company<span class="text-danger"> *</span></label>
                                 <input type="text" class="form-control" id="companyName" name="company" value="" autocomplete="off" placeholder="Company">
+                                <span class="text-danger text-muted" id="error-company"></span>
                             </div>
                             <div class="col-sm-5">
                                 <label>Country<span class="text-danger"> *</span></label>

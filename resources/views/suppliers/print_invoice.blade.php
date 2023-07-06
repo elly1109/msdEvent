@@ -1,8 +1,9 @@
 <?php
 use Dompdf\Dompdf;
-// use QrCode;
+use Illuminate\Support\Facades\Hash;
 
-$qrcode = base64_encode(QrCode::size(100)->generate('Make me into an QrCode!'));
+
+$qrcode = base64_encode(QrCode::size(100)->generate(Hash::make($data->orderNo)));
 
 $html =
     '
