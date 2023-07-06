@@ -37,23 +37,39 @@ function($){
 $('#firstName').keyup(function(e){
     var x = e.target.value.replace(/[^A-Za-z0-9]/g, "")
     e.target.value =  x[0].toUpperCase() + x.slice(1);
-    return;
+    if (x){
+        $("#error-first-name").html("");
+    }else{
+        $("#error-first-name").html("Please fill first name");
+    }
 });
 $('#lastName').keyup(function(e){
     var x = e.target.value.replace(/[^A-Za-z0-9]/g, "")
     e.target.value =  x[0].toUpperCase() + x.slice(1);
-    return;
+    if (x){
+        $("#error-last-name").html("");
+    }else{
+        $("#error-last-name").html("Please fill last name");
+    }
 });
 $('#title').keyup(function(e){
     var x = e.target.value
     e.target.value =  x[0].toUpperCase() + x.slice(1);
-    return;
+    if (x){
+        $("#error-title").html("");
+    }else{
+        $("#error-title").html("Please fill job title");
+    }
 });
 
 $('#companyName').keyup(function(e){
     var x = e.target.value
     e.target.value =  x[0].toUpperCase() + x.slice(1);
-    return;
+    if (x){
+        $("#error-company").html("");
+    }else{
+        $("#error-company").html("Please fill company name");
+    }
 });
 
 $('#email').keyup(function(e){
