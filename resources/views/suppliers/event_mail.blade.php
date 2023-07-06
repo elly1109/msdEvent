@@ -33,26 +33,26 @@
     </head>
     <body class="antialiased ">
         <div class="con" style="width: 100%; height:70%; padding:4em 6rem;">
-            <div class="card context" style="margin: 2em">
-             <div class="card-header" style="margin-top: 1em">
+            <div class="card context" style="margin: 3em">
+             <div class="card-header" style="margin-top: 2em">
                 <h3 class="text-primary">Registration Confirmation</h3>
             </div>
              <div class="card-body">
                 <section >
                     <div style="padding:1em ">
-                        <p class="text-muted">ticket # {{$details['orderNumber']}}</p>
+                        <p class="text-muted">Invitation # {{$details['orderNumber']}}</p>
                         <h4>Hi {{$details['name']}},</h4>
                         <p>Thanks for registering to attend MSD 2023 Business Meeting.</p>
                         <p> This Business Meeting shall focus on promoting and solidifying better partnerships and cooperation among stakeholders (removing barriers), improving pharmaceutical business services in the country, and strengthening the health commodities supply chain.</p>
 
                         <p>For more information about this event, please check out the <a href="https://event.msd.go.tz" >MSD Chat & Dine website</a> </p>
 
-                        <p>We have attached an Invitation badge. Please use it at arrival.</p>
+                        <p>We have attached an Invitation badge. Please use it upon arrival.</p>
                         
-                        <p>Looking forward to seeing you on the day.</p>
+                        <p>Looking forward to meeting you.</p>
 
                         <p>Cheers,</p>
-                        <p>Chat & Dine Committee</p>
+                        <p class="text-muted">Chat & Dine Committee</p>
                         
                     </div>
                 </section>

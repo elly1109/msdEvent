@@ -13,13 +13,11 @@ phoneInput.addEventListener('input', function (e) {
 
 if (!x[1]) {
     e.target.value = '+';
-
     return;
 }
 
 if (!x[2]) {
     e.target.value = `+${x[1]}`;
-
     return;
 }
 
@@ -33,7 +31,6 @@ e.target.value = `+${x[1]} (${x[2]}`
 
 jQuery(
 function($){
-
 $('#firstName').keyup(function(e){
     var x = e.target.value.replace(/[^A-Za-z0-9]/g, "")
     e.target.value =  x[0].toUpperCase() + x.slice(1);
@@ -43,6 +40,7 @@ $('#firstName').keyup(function(e){
         $("#error-first-name").html("Please fill first name");
     }
 });
+
 $('#lastName').keyup(function(e){
     var x = e.target.value.replace(/[^A-Za-z0-9]/g, "")
     e.target.value =  x[0].toUpperCase() + x.slice(1);
@@ -52,6 +50,7 @@ $('#lastName').keyup(function(e){
         $("#error-last-name").html("Please fill last name");
     }
 });
+
 $('#title').keyup(function(e){
     var x = e.target.value
     e.target.value =  x[0].toUpperCase() + x.slice(1);
@@ -97,8 +96,6 @@ $('#register-form').on('click', function(e) {
     let suffix = $('#suffix').val();
 
     $('#error-first-name,#error-last-name,#error-email,#error-phone-no,#error-title').html('');
-    // $("#username-create,#password-create").addClass('has-success');
-
 
     if(firstName == '' || lastName == '' || email == '' || phoneNo == '' || gender == '' || countryId == '' || title == '' || companyName == ''){
 
@@ -110,15 +107,13 @@ $('#register-form').on('click', function(e) {
         }
         if(email == ''){
             $("#error-email").html("Please fill email");
-
             var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
             if(email.match(mailformat)){
                 return true;
             }else{
                 $("#error-email").html("You have entered an invalid email address!");
                 return false;
-            }
-            
+            }    
         }
         if(phoneNo == ''){
             $("#error-phone-no").html("Please fill phone number");  
