@@ -45,7 +45,7 @@ $('#lastName').keyup(function(e){
     return;
 });
 $('#title').keyup(function(e){
-    var x = e.target.value.replace(/[^A-Za-z0-9]/g, "")
+    var x = e.target.value
     e.target.value =  x[0].toUpperCase() + x.slice(1);
     return;
 });
