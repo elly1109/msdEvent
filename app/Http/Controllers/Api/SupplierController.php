@@ -54,6 +54,8 @@ class SupplierController extends Controller
     public function store(Request $request)
     {
         //
+        // $rules = array('email' => 'unique:users,email');
+
 
 
         $data = Validator::make($request->all(),
@@ -61,7 +63,7 @@ class SupplierController extends Controller
             'firstName' => 'string | required',
             'lastName' => 'string | required',
             'gender' => 'string | required',
-            'email'=>'string | required',
+            'email'=>'required|unique:suppliers,email',
             'companyName' => 'string | required',
             'title' => 'string | nullable',
             'suffix' => 'string | nullable',
@@ -110,7 +112,6 @@ class SupplierController extends Controller
             if($checkIn->save()){
 
                 $details = [
-                    'title' => 'MSD 2023 Business Meeting',
                     'orderNumber' => $checkIn->orderNo,
                     'name'=>$supp->firstName,
                 ];
@@ -328,10 +329,9 @@ class SupplierController extends Controller
 }
 
         </style>
-        
         </head>
         <body>
-<div class="l-col-right ticket-wrap " aria-label="A fake boat ticket demonstrating mixing font weights and widths">
+<div class="ticket-wrap " aria-label="A fake boat ticket demonstrating mixing font weights and widths">
   <div class="ticket  " aria-hidden="true">
     <div class="watermark">
 		</div>

@@ -400,7 +400,7 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
 <section id='speakers' class='gather_sec'>
     <div class="container">
         <div class="row no-margin vc_row wpb_row">
-            <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+            <div class="wpb_column vc_column_container vc_col-sm-12 vc_col_md_12"><div class="vc_column-inner "><div class="wpb_wrapper">
 	<div class="wpb_text_column wpb_content_element " >
 		<div class="wpb_wrapper">
 			<div class="section-title wow fadeInUp">
@@ -612,11 +612,11 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
 	<div class="wpb_text_column wpb_content_element " >
 		<div class="wpb_wrapper">
 			<div class="thumbnail">
-<p><img loading="lazy" class="aligncenter wp-image-1373 size-full" src="{{asset('assets/wp-content/uploads/serena.jpg')}}" alt="hotel_3" width="360" height="240" srcset="https://lh3.googleusercontent.com/qlz8vAa8zlGtMaHa0pLhl8AfDmSeOoANcqH5ILmy6JCDPKA4gxRf307USWFH9Ayb3VoUvJzoZnjIOPB6aihjqy3EXGQ8npFY7DBBQ-Y68Q 360w, https://lh3.googleusercontent.com/qlz8vAa8zlGtMaHa0pLhl8AfDmSeOoANcqH5ILmy6JCDPKA4gxRf307USWFH9Ayb3VoUvJzoZnjIOPB6aihjqy3EXGQ8npFY7DBBQ-Y68Q 300w" sizes="(max-width: 360px) 100vw, 360px" /></p>
+<p><img loading="lazy" class="aligncenter wp-image-1373 size-full" src="{{asset('assets/wp-content/uploads/serena.jpg')}}" alt="hotel_3" width="360" height="240" srcset="https://cache.marriott.com/content/dam/marriott-renditions/DARFP/darfp-queen-guestroom-3319-hor-wide.jpg?output-quality=70&downsize=*:472px 360w, https://cache.marriott.com/content/dam/marriott-renditions/DARFP/darfp-queen-guestroom-3319-hor-wide.jpg?output-quality=70&downsize=*:472px 300w" sizes="(max-width: 360px) 100vw, 360px" /></p>
 <div class="caption">
-<h6 class="caption-title">Serena Hotels</h6>
-<p class="caption-text">From $145 per night</p>
-<p class="text-center"><a class="btn btn-outline" href="https://www.serenahotels.com/dar-es-salaam" target="_blank">Visit Website</a></p>
+<h6 class="caption-title">Four Points Hotel</h6>
+<p class="caption-text">From $153 per night</p>
+<p class="text-center"><a class="btn btn-outline" href="https://www.marriott.com/en-gb/hotels/travel/darfp-four-points-dar-es-salaam-new-africa/" target="_blank">Visit Website</a></p>
 </div>
 </div>
 
@@ -683,11 +683,11 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
 
 
 	</div>
-{{-- 
+
     <div >
         <h5 class="text-muted text-center">To be communicated later</h5>
-    </div> --}}
-<div class="sponsor-slider wow bounceIn" data-slick='{"slidesToShow":3,"arrows":false,"centerMode":true,"autoplay":true,"responsive":[{"breakpoint":768,"settings":{"arrows":false,"centerMode":true,"autoplay":true,"slidesToShow":3,"centerPadding":"40px"}},{"breakpoint":480,"settings":{"arrows":false,"centerMode":true,"autoplay":true,"slidesToShow":1,"centerPadding":"40px"}}]}'>
+    </div>
+{{-- <div class="sponsor-slider wow bounceIn" data-slick='{"slidesToShow":3,"arrows":false,"centerMode":true,"autoplay":true,"responsive":[{"breakpoint":768,"settings":{"arrows":false,"centerMode":true,"autoplay":true,"slidesToShow":3,"centerPadding":"40px"}},{"breakpoint":480,"settings":{"arrows":false,"centerMode":true,"autoplay":true,"slidesToShow":1,"centerPadding":"40px"}}]}'>
     <div>
             <a href="http://www.msd.go.tz/" target="_blank">
                 <img width="197" height="69" src="{{asset('assets/wp-content/uploads/2015/05/sponsor_1.png')}}" class="img-responsive center-block" alt="" loading="lazy" />            </a>
@@ -720,7 +720,7 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
             <a href="https://web3canvas.com/" target="_blank">
                 <img width="258" height="69" src="{{asset('assets/wp-content/uploads/2015/05/sponsor_41.png')}}" class="img-responsive center-block" alt="" loading="lazy" />            </a>
         </div>
-</div>
+</div> --}}
 </div></div></div>        </div>
     </div>
     <!-- end .container -->

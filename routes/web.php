@@ -26,6 +26,12 @@ Route::get('auth', function () {
 })->name('auth');
 
 
+
+Route::get('email', function () {
+    return view('suppliers.event_mail');
+});
+
+
 Route::post('auth/login',[AuthController::class,'login']);
 
 

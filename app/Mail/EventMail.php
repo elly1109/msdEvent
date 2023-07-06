@@ -31,7 +31,7 @@ class EventMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Ticket Summary',
+            subject: 'MSD 2023 Business Meeting',
         );
     }
 
