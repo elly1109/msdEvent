@@ -1,0 +1,73 @@
+version: "3.9"
+services:
+  msd_event_app:
+    container_name: msd_event_app
+    build:
+      context: .
+      dockerfile: ./docker/php/Dockerfile
+    expose:
+      - 9000
+    volumes:
+      - .:/usr/src/app
+      - ./public:/usr/src/app/public
+    depends_on:
+      - event_db
+    networks:
+      - app_network
+
+  event_nginx:
+    container_name: event_nginx
+    build:
+      context: .
+      dockerfile: ./docker/nginx/Dockerfile
+    volumes:
+    - ./public:/usr/src/app/public
+    ports:
+      - 8000:80
+    depends_on:
+      - msd_event_app
+    environment:
+      NGINX_FPM_HOST: msd_event_app
+      NGINX_ROOT: /usr/src/app/public
+    networks:
+      - app_network
+
+  event_db:
+    container_name: event_db
+    image: mysql:latest
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    volumes:
+      - ./storage/db-data:/var/lib/mysql
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_DATABASE: event
+      MYSQL_ROOT_PASSWORD: Msd1234$$
+      MYSQL_USER: event
+      MYSQL_PASSWORD: Msd1234$$
+    networks:
+      - app_network
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    restart: always
+    ports:
+      - 9001:80
+    environment:
+      - PMA_ARBITRARY=1
+
+  msd_event_redis:
+    container_name: msd_event_redis
+    image: redis:latest
+    ports:
+      - 6379:6379
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge
+
+
+
