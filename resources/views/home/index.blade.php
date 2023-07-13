@@ -687,43 +687,34 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
 
 	</div>
 
-    <div >
+    {{-- <div >
         <h5 class="text-muted text-center">To be communicated later</h5>
-    </div>
-{{-- <div class="sponsor-slider wow bounceIn" data-slick='{"slidesToShow":3,"arrows":false,"centerMode":true,"autoplay":true,"responsive":[{"breakpoint":768,"settings":{"arrows":false,"centerMode":true,"autoplay":true,"slidesToShow":3,"centerPadding":"40px"}},{"breakpoint":480,"settings":{"arrows":false,"centerMode":true,"autoplay":true,"slidesToShow":1,"centerPadding":"40px"}}]}'>
+    </div> --}}
+<div class="sponsor-slider wow bounceIn" data-slick='{"slidesToShow":3,"arrows":false,"centerMode":true,"autoplay":true,"responsive":[{"breakpoint":768,"settings":{"arrows":false,"centerMode":true,"autoplay":true,"slidesToShow":3,"centerPadding":"40px"}},{"breakpoint":480,"settings":{"arrows":false,"centerMode":true,"autoplay":true,"slidesToShow":1,"centerPadding":"40px"}}]}'>
     <div>
             <a href="http://www.msd.go.tz/" target="_blank">
-                <img width="197" height="69" src="{{asset('assets/wp-content/uploads/2015/05/sponsor_1.png')}}" class="img-responsive center-block" alt="" loading="lazy" />            </a>
+                <img width="197" height="69" src="{{asset('assets/wp-content/uploads/msdlogo.png')}}" class="img-responsive center-block" alt="" loading="lazy" />            </a>
         </div>
     <div>
-            <a href="http://themeforest.net/" target="_blank">
-                <img width="258" height="69" src="{{asset('assets/wp-content/uploads/2015/05/sponsor_2.png')}}" class="img-responsive center-block" alt="" loading="lazy" />            </a>
+            <a href="https://crdb.co.tz/en" target="_blank">
+                <img width="197" height="69" src="{{asset('assets/wp-content/uploads/crdb-logo.png')}}" class="img-responsive center-block" alt="" loading="lazy" />            </a>
         </div>
     <div>
-            <a href="https://www.heartinternet.uk/" target="_blank">
-                <img width="258" height="69" src="{{asset('assets/wp-content/uploads/2015/05/sponsor_3.png')}}" class="img-responsive center-block" alt="" loading="lazy" />            </a>
+            <a href="https://www.tcbbank.co.tz/home/en" target="_blank">
+                <img width="197" height="69" src="{{asset('assets/wp-content/uploads/tcb-logo.png')}}" class="img-responsive center-block" alt="" loading="lazy" />            </a>
         </div>
     <div>
-            <a href="https://web3canvas.com/" target="_blank">
-                <img width="258" height="69" src="{{asset('assets/wp-content/uploads/2015/05/sponsor_4.png')}}" class="img-responsive center-block" alt="" loading="lazy" />            </a>
+            <a href="https://www.nmbbank.co.tz/" target="_blank">
+                <img width="197" height="69" src="{{asset('assets/wp-content/uploads/tz-nmb-logo.png')}}" class="img-responsive center-block" alt="" loading="lazy" />            </a>
         </div>
     <div>
-            <a href="http://www.envato.com/" target="_blank">
-                <img width="197" height="69" src="{{asset('assets/wp-content/uploads/2015/05/sponsor_11.png')}}" class="img-responsive center-block" alt="" loading="lazy" />            </a>
+            <a href="https://www.nbcbank.co.tz/" target="_blank">
+                <img width="197" height="69" src="{{asset('assets/wp-content/uploads/nbc-logo.png')}}" class="img-responsive center-block" alt="" loading="lazy" />            </a>
         </div>
-    <div>
-            <a href="http://themeforest.net/" target="_blank">
-                <img width="258" height="69" src="{{asset('assets/wp-content/uploads/2015/05/sponsor_21.png')}}" class="img-responsive center-block" alt="" loading="lazy" />            </a>
-        </div>
-    <div>
-            <a href="https://www.heartinternet.uk/" target="_blank">
-                <img width="258" height="69" src="{{asset('assets/wp-content/uploads/2015/05/sponsor_31.png')}}" class="img-responsive center-block" alt="" loading="lazy" />            </a>
-        </div>
-    <div>
-            <a href="https://web3canvas.com/" target="_blank">
-                <img width="258" height="69" src="{{asset('assets/wp-content/uploads/2015/05/sponsor_41.png')}}" class="img-responsive center-block" alt="" loading="lazy" />            </a>
-        </div>
-</div> --}}
+   
+   
+  
+</div>
 </div></div></div>        </div>
     </div>
     <!-- end .container -->
@@ -738,7 +729,7 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
 <p><img loading="lazy" class="alignnone size-full wp-image-1293 wow zoomIn" src='{{asset("assets/wp-content/uploads/2015/05/location-icon.png")}}' alt="location-icon" width="128" height="128" /></p>
 <h5>ADDRESS</h5>
 <p>MSD Business Meeting</p>
-<p class="no-rep">Johari Rotana, Meet n Party,</p>
+<p class="no-rep">Johari Rotana, Msd Chat & Dine,</p>
 <p>Sokoine Drive, Dar es Salaam</p>
 <p>Time: 18:00 to 21:30 Hrs</p>
 </div>

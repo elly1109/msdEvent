@@ -57,13 +57,13 @@ services:
     environment:
       - PMA_ARBITRARY=1
 
-  msd_event_redis:
-    container_name: msd_event_redis
-    image: redis:latest
-    ports:
-      - 6379:6379
-    networks:
-      - app_network
+  # msd_event_redis:
+  #   container_name: msd_event_redis
+  #   image: redis:latest
+  #   ports:
+  #     - 6379:6379
+  #   networks:
+  #     - app_network
 
 networks:
   app_network:
