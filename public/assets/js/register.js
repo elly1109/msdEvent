@@ -126,6 +126,14 @@ $('#register-form').on('click', function(e) {
         }
 
     }else{
+
+        swal({
+            title: "Checking...",
+            text: "Please wait",
+            imageUrl: "loader.gif",
+            showConfirmButton: false,
+            allowOutsideClick: false
+          });
         
         $.ajax({
             type: "POST",

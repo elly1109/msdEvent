@@ -140,8 +140,8 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
                 </div>
                 
 
-                <div id="navbar" class="navbar-collapse collapse">
-                <ul id="menu-one-page-navigation-menus" class="gather_main-nav nav navbar-nav navbar-right"><li id="menu-item-1242" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1242"><a title="Home" href="#top">Home</a></li>
+<div id="navbar" class="navbar-collapse collapse">
+<ul id="menu-one-page-navigation-menus" class="gather_main-nav nav navbar-nav navbar-right"><li id="menu-item-1242" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1242"><a title="Home" href="#top">Home</a></li>
 <li id="menu-item-1243" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1243"><a title="Speakers" href="#speakers">Speakers</a></li>
 <li id="menu-item-1244" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1244"><a title="Schedule" href="#schedule">Schedule</a></li>
 {{-- {{-- <li id="menu-item-1245" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1245"><a title="Gallery" href="#gallery">Gallery</a></li> --}}
@@ -163,7 +163,7 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
 	<div  class="wpb_single_image wpb_content_element vc_align_center   header_top-bg">
 		
 		<figure class="wpb_wrapper vc_figure">
-			<a href="https://www.msd.go.tz" target="_self" class="vc_single_image-wrapper   vc_box_border_grey"><img width="110" height="60" src='{{asset("assets/wp-content/uploads/event-logo2.png")}}' class="vc_single_image-img attachment-full" alt="" loading="lazy" /></a>
+			<a href="https://www.msd.go.tz" target="_self" class="vc_single_image-wrapper   vc_box_border_grey"><img width="170" height="100" src='{{asset("assets/wp-content/uploads/msdlogo.png")}}' class="vc_single_image-img attachment-full" alt="" loading="lazy" /></a>
 		</figure>
 	</div>
 
@@ -469,7 +469,7 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
                     <!-- timeline-bullet -->
                     <div class="timeline-content">
                         <h2 class="wow flipInX" data-wow-delay="0.3s">Arrival</h2>
-                        <span class="date wow flipInX" data-wow-delay="0.3s">18:00</span>
+                        <span class="date wow flipInX" data-wow-delay="0.3s">1800hrs</span>
                     </div>
                     <!-- timeline-content -->
                 </div>
@@ -479,9 +479,9 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
                     </div>
                     <!-- timeline-bullet -->
                     <div class="timeline-content">
-                        <h2 class="wow flipInX" data-wow-delay="0.3s">Opening &#038; Welcome Note</h2>
+                        <h2 class="wow flipInX" data-wow-delay="0.3s">Opening </h2>
                         <p class="wow flipInX" data-wow-delay="0.3s">by Mavere Tukai</p>
-                        <span class="date wow flipInX" data-wow-delay="0.3s">18:30</span>
+                        <span class="date wow flipInX" data-wow-delay="0.3s">1830hrs</span>
                     </div>
                     <!-- timeline-content -->
                 </div>
@@ -491,9 +491,9 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
                     </div>
                     <!-- timeline-bullet -->
                     <div class="timeline-content">
-                        <h2 class="wow flipInX" data-wow-delay="0.3s">Word from Guest of Honor</h2>
+                        <h2 class="wow flipInX" data-wow-delay="0.3s">Welcome Note</h2>
                                             <p class="wow flipInX" data-wow-delay="0.3s">by Guest of Honor</p>
-                                                                                    <span class="date wow flipInX" data-wow-delay="0.3s">18:00</span>
+                                                                                    <span class="date wow flipInX" data-wow-delay="0.3s">1840hrs</span>
                                         </div>
                     <!-- timeline-content -->
                 </div>
@@ -503,9 +503,9 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
                     </div>
                     <!-- timeline-bullet -->
                     <div class="timeline-content">
-                        <h2 class="wow flipInX" data-wow-delay="0.3s">Discussion &#038; Presentation</h2>
-                                            <p class="wow flipInX" data-wow-delay="0.3s">by Ally Nampair</p>
-                                                                                    <span class="date wow flipInX" data-wow-delay="0.3s">19:00 PM</span>
+                        <h2 class="wow flipInX" data-wow-delay="0.3s">Discussion </h2>
+                                            <p class="wow flipInX" data-wow-delay="0.3s">All (Suppliers & Manufacturers)</p>
+                                                                                    <span class="date wow flipInX" data-wow-delay="0.3s">1900hrs </span>
                                         </div>
                     <!-- timeline-content -->
                 </div>
@@ -515,11 +515,10 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
                     </div>
                     <!-- timeline-bullet -->
                     <div class="timeline-content">
-                        <h2 class="wow flipInX" data-wow-delay="0.3s">Word from Sponsors</h2>
+                        <h2 class="wow flipInX" data-wow-delay="0.3s">Note from Sponsors</h2>
                         <p class="wow flipInX" data-wow-delay="0.3s">by Representatives</p>
-
-                                                                                    <span class="date wow flipInX" data-wow-delay="0.3s">20:30</span>
-                                        </div>
+                        <span class="date wow flipInX" data-wow-delay="0.3s">2000hrs</span>
+                    </div>
                     <!-- timeline-content -->
                 </div>
 
@@ -529,9 +528,9 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
                     <!-- timeline-bullet -->
                     <div class="timeline-content">
                         <h2 class="wow flipInX" data-wow-delay="0.3s">Vote of thanks</h2>
-                                            <p class="wow flipInX" data-wow-delay="0.3s">by Mavere Tukai</p>
-                                                                                    <span class="date wow flipInX" data-wow-delay="0.3s">20:50 </span>
-                                        </div>
+                        <p class="wow flipInX" data-wow-delay="0.3s">by Mavere Tukai</p>
+                        <span class="date wow flipInX" data-wow-delay="0.3s">2030hrs</span>
+                    </div>
                     <!-- timeline-content -->
                 </div>
 
@@ -540,8 +539,9 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
                     </div>
                     <!-- timeline-bullet -->
                     <div class="timeline-content">
-                        <h2 class="wow flipInX" data-wow-delay="0.3s">Main Food</h2>
-                        <span class="date wow flipInX" data-wow-delay="0.3s">21:00 </span>
+                        <h2 class="wow flipInX" data-wow-delay="0.3s">Main Food &amp; Booths Visit</h2>
+                        <p class="wow flipInX" data-wow-delay="0.3s">All</p>
+                        <span class="date wow flipInX" data-wow-delay="0.3s">2035hrs</span>
                     </div>
                     <!-- timeline-content -->
                 </div>
@@ -551,7 +551,7 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
                     <!-- timeline-bullet -->
                     <div class="timeline-content">
                         <h2 class="wow flipInX" data-wow-delay="0.3s">Closing</h2>
-                        <span class="date wow flipInX" data-wow-delay="0.3s">21:30</span>
+                        <span class="date wow flipInX" data-wow-delay="0.3s">2130hrs - 2150hrs</span>
                     </div>
                     <!-- timeline-content -->
                 </div>

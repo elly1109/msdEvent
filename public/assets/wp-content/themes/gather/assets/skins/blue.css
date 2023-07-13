@@ -2,11 +2,11 @@
   COLOR PALLETTES : BLUE
   ------------------------------------------------
   
-  Blue 1        : #337BC5;
+  Blue 1        : #538EC1;
   Dark Grey      : #3b3b3b;
   Medium Grey    : #5c5c5c;
   Light Grey     : #818181;
-   Lightest Grey  : #C2C2C2;
+   Lightest Grey  : #538EC1;
    White          : #ffffff;
 
    
@@ -24,54 +24,54 @@ body, .timeline-content h2 {
     color: #5c5c5c;
 }
 .nav-pills>li>a {
-    color: #C2C2C2;
+    color: #538EC1;
 }
 .form-control:focus {
-    border-color: #C2C2C2;
+    border-color: #538EC1;
 }
 .navbar-default .navbar-nav>li>a {
     color: #818181;
 }
 .slick-prev:before, .slick-next:before {
-    color: #C2C2C2;
+    color: #538EC1;
 }
 /* green
  * ----- */
 ::-moz-selection {
-    background: #337BC5;
+    background: #538EC1;
     color: #FFF;
 }
 ::selection {
-    background: #337BC5;
+    background: #538EC1;
     color: #FFF;
 }
 .header, .sub-header {
     color: #FFF;
-    background-color: #337BC5;
+    background-color: #538EC1;
 }
 /*color*/
 a, a:hover, a:focus, .speaker-info p, .highlighted-plan .price, .highlighted-plan .plan-name, a.popup-video:hover i {
-    color: #337BC5;
+    color: #538EC1;
 }
 .attr-nav > ul > li > a:hover,
 .attr-nav > ul > li > a:focus,
 .attr-nav > ul > li > a:active,
 .benefit-item .benefit-icon i {
-    color: #337BC5;
+    color: #538EC1;
 }
 /*background*/
 .timeline::before {
-    background: #337BC5;
+    background: #538EC1;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
 , .navbar-default .navbar-nav>.current-menu-parent > a, .navbar-default .navbar-nav>.current-menu-parent > a:focus, .navbar-default .navbar-nav>.current-menu-parent > a:hover  
 {    color: #FFF;
-    background-color: #337BC5;
+    background-color: #538EC1;
 }
 /*border*/
 .post-wrap .sticky,
 .timeline-bullet, .highlighted-plan {
-    border-color: #337BC5;
+    border-color: #538EC1;
 }
 /*background color*/
 .gallery-filters li a.active,
@@ -79,7 +79,7 @@ a, a:hover, a:focus, .speaker-info p, .highlighted-plan .price, .highlighted-pla
 .gallery-filters li a.active:focus,
 .attr-nav > ul > li > a span.badge,
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover, .dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {
-    background-color: #337BC5;
+    background-color: #538EC1;
 }
 /* 
   BUTTONS
@@ -94,7 +94,7 @@ a, a:hover, a:focus, .speaker-info p, .highlighted-plan .price, .highlighted-pla
     color: #FFF;
 }
 .btn-primary {
-    background-color: #5c5c5c;
+    background-color: #337BC5;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
     background-color: #3b3b3b;
@@ -103,7 +103,7 @@ a, a:hover, a:focus, .speaker-info p, .highlighted-plan .price, .highlighted-pla
 .woocommerce #review_form #respond .form-submit #submit,
 .btn-success {
     background-color: #337BC5;
-    border-color: #337BC5;
+    border-color: #FFF;
 }
 .pricing-item.highlighted-plan .add_to_cart_inline .button:hover,
 .pricing-item.highlighted-plan .add_to_cart_inline .button:focus,
