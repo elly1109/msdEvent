@@ -57,7 +57,15 @@
 
 
 
-            
+            {{-- <div class="row">
+                <div class="col-md-6">
+                    <div class="card dash-widget">
+                        <div class="card-body">
+                        <canvas id="pieChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div> --}}
 
 
 

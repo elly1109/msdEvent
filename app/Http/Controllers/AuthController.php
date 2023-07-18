@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use App\Models\Supplier;
 use App\Models\Event;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 
@@ -21,6 +22,9 @@ class AuthController extends Controller
             $suppliers = Supplier::count();
             $checked = Event::where('checkedIn','=','1')->count();
             $not_checked = Event::where('checkedIn','=','0')->count();
+
+       
+
 
 
             return view('dashboard.home',compact('suppliers', 'checked','not_checked'));

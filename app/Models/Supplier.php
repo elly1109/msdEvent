@@ -11,7 +11,7 @@ class Supplier extends Model
 
     
     protected $fillable = [
-        'firstName', 'lastName','companyName','title'  ,'email','gender', 'countryId'     
+        'firstName', 'lastName','companyId','title'  ,'email','gender', 'countryId'     
     ];
 
     public function nations()

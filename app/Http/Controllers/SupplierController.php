@@ -9,6 +9,9 @@ use Illuminate\Support\Facades\Auth;
 
 class SupplierController extends Controller
 {
+
+
+
     /**
      * Display a listing of the resource.
      *
@@ -27,4 +30,6 @@ class SupplierController extends Controller
         return redirect('/');
         
     }
+
+
 }

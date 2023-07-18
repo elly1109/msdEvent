@@ -6,12 +6,12 @@
 <?php 
 
 use App\Models\Nation;
+use App\Models\Company;
 
 $nations =  Nation::get();
+$companies = Company::get();
 
 ?>
-<!-- Mirrored from gather.cththemes.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 09 Jun 2023 11:45:02 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
         <meta charset="UTF-8"/>
         <link rel="profile" href="http://gmpg.org/xfn/11" />
@@ -300,7 +300,12 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
                             <div class="form-group">
                             <div class="col-sm-7">
                                 <label>Company<span class="text-danger"> *</span></label>
-                                <input type="text" class="form-control" id="companyName" name="company" value="" autocomplete="off" placeholder="Company">
+                                <select class="form-control " id="companyId" name="company" required>
+                                    <option value="">Choose...</option>
+                                    @foreach ($companies as $comp)
+                                    <option value="{{ $comp['id'] }}">{{ $comp['companyName'] }}</option>
+                                    @endforeach
+                                 </select>
                                 <span class="text-danger text-muted" id="error-company"></span>
                             </div>
                             <div class="col-sm-5">
@@ -314,17 +319,14 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
                             </div>
                             </div> 
                         </div>
-                    <div class="available-seats">
-                            <p>Only <strong>250</strong> seats are available.</p>                        </div>
-                    <div class="row">
+
                             
                      </div>
                                                     
                         
                         
                         <div class="text-center top-space">
-                            <button type="submit" id="register-form" class="btn btn-success btn-lg">Register</button>
-                            
+                            <button type="submit" id="register-form" class="btn btn-success btn-lg">Register</button>     
                         </div>
                     </form>
 
@@ -334,7 +336,7 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
         </div>
     </div>
 </div>
-<p class="cta_urgency wow fadeIn" data-wow-delay="0.5s"><small>Hurry up, Only few seats are available</small></p>
+<p class="cta_urgency wow fadeIn" data-wow-delay="0.5s"><small>Only few seats are available</small></p>
 </div>
 
 		</div>
@@ -423,7 +425,7 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
             
         <div class="speaker-info">
                 <a href="javascript:void(0)">
-                    <img width="130" height="130" src="{{asset('assets/wp-content/uploads/avatar.jpg')}}" class="img-responsive center-block wp-post-image" alt="" loading="lazy" /><p class="speaker_name">Nampair Ally</p><span>Director of Procurement, MSD</span>                </a>
+                    <img width="130" height="130" src="{{asset('assets/wp-content/uploads/nampair.png')}}" class="img-responsive center-block wp-post-image" alt="" loading="lazy" /><p class="speaker_name">Nampair Ally</p><span>Director of Procurement, MSD</span>                </a>
                 </div>
 
             
@@ -690,27 +692,24 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
     {{-- <div >
         <h5 class="text-muted text-center">To be communicated later</h5>
     </div> --}}
-<div class="sponsor-slider wow bounceIn" data-slick='{"slidesToShow":3,"arrows":false,"centerMode":true,"autoplay":true,"responsive":[{"breakpoint":768,"settings":{"arrows":false,"centerMode":true,"autoplay":true,"slidesToShow":3,"centerPadding":"40px"}},{"breakpoint":480,"settings":{"arrows":false,"centerMode":true,"autoplay":true,"slidesToShow":1,"centerPadding":"40px"}}]}'>
-    <div>
+<div class="sponsor-slider wow bounceIn" data-slick='{"slidesToShow":2,"arrows":false,"centerMode":true,"autoplay":true,"responsive":[{"breakpoint":768,"settings":{"arrows":false,"centerMode":true,"autoplay":true,"slidesToShow":3,"centerPadding":"40px"}},{"breakpoint":480,"settings":{"arrows":false,"centerMode":true,"autoplay":true,"slidesToShow":1,"centerPadding":"40px"}}]}'>
+    {{-- <div>
             <a href="http://www.msd.go.tz/" target="_blank">
-                <img width="197" height="69" src="{{asset('assets/wp-content/uploads/msdlogo.png')}}" class="img-responsive center-block" alt="" loading="lazy" />            </a>
-        </div>
-    <div>
-            <a href="https://crdb.co.tz/en" target="_blank">
-                <img width="197" height="69" src="{{asset('assets/wp-content/uploads/crdb-logo.png')}}" class="img-responsive center-block" alt="" loading="lazy" />            </a>
-        </div>
-    <div>
+                <img width="140" height="60" src="{{asset('assets/wp-content/uploads/msdlogo.png')}}" class="img-responsive center-block" alt="" loading="lazy" />            </a>
+        </div> --}}
+        <div>
             <a href="https://www.tcbbank.co.tz/home/en" target="_blank">
-                <img width="197" height="69" src="{{asset('assets/wp-content/uploads/tcb-logo.png')}}" class="img-responsive center-block" alt="" loading="lazy" />            </a>
-        </div>
+                <img width="140" height="60" src="{{asset('assets/wp-content/uploads/tcb-logo.png')}}" class="img-responsive center-block" alt="" loading="lazy" />            </a>
+            </div>
+            <div>
+                    <a href="https://crdb.co.tz/en" target="_blank">
+                        <img width="250" height="80" src="{{asset('assets/wp-content/uploads/crdb-logo.png')}}" class="img-responsive center-block" alt="" loading="lazy" />            </a>
+                </div>
     <div>
             <a href="https://www.nmbbank.co.tz/" target="_blank">
-                <img width="197" height="69" src="{{asset('assets/wp-content/uploads/tz-nmb-logo.png')}}" class="img-responsive center-block" alt="" loading="lazy" />            </a>
+                <img width="120" height="60" src="{{asset('assets/wp-content/uploads/tz-nmb-logo.png')}}" class="img-responsive center-block" alt="" loading="lazy" />            </a>
         </div>
-    <div>
-            <a href="https://www.nbcbank.co.tz/" target="_blank">
-                <img width="197" height="69" src="{{asset('assets/wp-content/uploads/nbc-logo.png')}}" class="img-responsive center-block" alt="" loading="lazy" />            </a>
-        </div>
+   
    
    
   
@@ -742,7 +741,7 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
 			<div class="contact-box">
 <p><img loading="lazy" class="alignnone size-full wp-image-1292 wow zoomIn" src='{{asset("assets/wp-content/uploads/2015/05/email-icon.png")}}'  alt="email-icon" width="110" height="110" data-wow-delay="0.3s" /></p>
 <h5>CONTACT</h5>
-<p class="no-rep"><a href="mailto:info@msd.go.tz">info@msd.go.tz</a></p>
+<p class="no-rep"><a href="mailto:info.event@msd.go.tz">info.event@msd.go.tz</a></p>
 <p><a href="https://www.msd.go.tz">www.msd.go.tz</a></p>
 {{-- <p><a href="mailto:sponsor@thisevent.com">sponsor@thisevent.com</a></p> --}}
 <p>+255 22 2860890-7</p>
@@ -796,8 +795,8 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
  						    <!--=============== footer ===============-->
 <footer class="page-footer">
 	<div class="social-icons">
-        {{-- <a href="#" target="_blank" class="wow zoomIn"> <i class="fa fa-twitter"></i> </a>
-        <a href="#" target="_blank" class="wow zoomIn" data-wow-delay="0.2s"> <i class="fa fa-facebook"></i> </a> --}}
+         <a href="https://www.twitter.com/msdtanzania" target="_blank" class="wow zoomIn"> <i class="fa fa-twitter"></i> </a>
+        <a href="https://www.facebook.com/medicalstoresdepartment" target="_blank" class="wow zoomIn" data-wow-delay="0.2s"> <i class="fa fa-facebook"></i> </a>
         <a href="https://www.instagram.com/msdtanzania" target="_blank" class="wow zoomIn" data-wow-delay="0.4s"> <i class="fa fa-instagram"></i> </a>
      </div>			        
 	<p><small class="text-muted">Copyright © Medical Stores Department 2023. All rights reserved.</small></p>			    
@@ -809,7 +808,8 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
         <script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"></script>
         <script type='text/javascript' src='{{asset("assets/wp-includes/js/dist/vendor/regenerator-runtime.minb36a.js?ver=0.13.7")}}' id='regenerator-runtime-js'></script>
         <script type='text/javascript' src='{{asset("assets/wp-includes/js/dist/vendor/wp-polyfill.min2c7c.js?ver=3.15.0")}}' id='wp-polyfill-js'></script>
-        <script type='text/javascript' src='{{asset("assets/js/register.js")}}' id='wp-polyfill-js'></script>
+        <script type='text/javascript' src='{{asset("assets/js/register.js")}}'></script>
+        <script type='text/javascript' src='{{asset("assets/js/select2.min.js")}}' ></script>
         <script type='text/javascript' id='contact-form-7-js-extra'>
                     /* <![CDATA[ */
             var wpcf7 = {"api":{"root":"https:\/\/gather.cththemes.org\/wp-json\/","namespace":"contact-form-7\/v1"}};

@@ -14,12 +14,19 @@ use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Mail;
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
+use App\Rules\MaxAttendeesFromCompany;
 
 
 
 
 class SupplierController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('guest');
+        $this->middleware('check.company.attendee.count:81,82,83,84,91,96,147,148,149,150,151,152')->only('store'); // Apply the middleware to the register method.
+    }
     /**
      * Display a listing of the resource.
      */
@@ -56,15 +63,13 @@ class SupplierController extends Controller
         //
         // $rules = array('email' => 'unique:users,email');
 
-
-
         $data = Validator::make($request->all(),
         [
             'firstName' => 'string | required',
             'lastName' => 'string | required',
             'gender' => 'string | required',
             'email'=>'required|unique:suppliers,email',
-            'companyName' => 'string | required',
+            'companyId' => 'integer | required',
             'title' => 'string | nullable',
             'suffix' => 'string | nullable',
             'prefix' => 'string | nullable',
@@ -75,18 +80,14 @@ class SupplierController extends Controller
             return $this->sendError('Validation Error',$data->errors(),403);  
         }
 
-        // $sup = Supplier::where('email','=',$request['email'])->orWhere('phoneNumber','=', $request['phoneNumber'])->get(); 
-
-        // if($sup){
-        //     return $this->sendError("This email is already used can't be registered twice.", [], 500);
-        // }
+       
 
         $supp = new Supplier();
         $supp->firstName = $request['firstName'];
         $supp->lastName = $request['lastName'];
         $supp->gender = $request['gender'];
         $supp->email = $request['email'];
-        $supp->companyName = $request['companyName'];
+        $supp->companyId = $request['companyId'];
         $supp->countryId = $request['countryId'];
         $supp->phoneNumber = $request['phoneNumber'];
         $supp->title = $request['title'];

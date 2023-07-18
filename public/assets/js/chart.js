@@ -1,3 +1,10 @@
+var getUrl = window.location;
+var address = window.location.href;
+var baseUrl = getUrl .protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[0];
+if((baseUrl=='http://localhost/')||(baseUrl=='https://localhost/')){
+    baseUrl+= 'events/public/';
+}
+
 $(document).ready(function() {
 
 	// Bar Chart
@@ -46,3 +53,44 @@ $(document).ready(function() {
 	});
 		
 });
+
+
+
+
+// api url
+const api_url = baseUrl+ 'api/get-suppliers-nations.json';
+ 
+// Defining async function
+async function getapi(url) {
+   
+    // Storing response
+    const response = await fetch(url);
+   
+    // Storing data in form of JSON
+    var data = await response.json();
+    console.log(data);
+    // if (response) {
+    //     hideloader();
+    // }
+    // show(data);
+}
+
+
+getapi(api_url);
+
+//pie
+  var ctxP = document.getElementById("pieChart").getContext('2d');
+  var myPieChart = new Chart(ctxP, {
+    type: 'pie',
+    data: {
+      labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
+      datasets: [{
+        data: [300, 50, 100, 40, 120],
+        backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
+        hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+      }]
+    },
+    options: {
+      responsive: true
+    }
+  });

@@ -41,6 +41,14 @@ $('#firstName').keyup(function(e){
     }
 });
 
+
+$('.js-company').select2({
+    placeholder: 'Select an option',
+    allowClear: true
+
+}
+);
+
 $('#lastName').keyup(function(e){
     var x = e.target.value.replace(/[^A-Za-z0-9]/g, "")
     e.target.value =  x[0].toUpperCase() + x.slice(1);
@@ -61,15 +69,15 @@ $('#title').keyup(function(e){
     }
 });
 
-$('#companyName').keyup(function(e){
-    var x = e.target.value
-    e.target.value =  x[0].toUpperCase() + x.slice(1);
-    if (x){
-        $("#error-company").html("");
-    }else{
-        $("#error-company").html("Please fill company name");
-    }
-});
+// $('#companyId').keyup(function(e){
+//     var x = e.target.value
+//     e.target.value =  x[0].toUpperCase() + x.slice(1);
+//     if (x){
+//         $("#error-company").html("");
+//     }else{
+//         $("#error-company").html("Please fill company name");
+//     }
+// });
 
 $('#email').keyup(function(e){
     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -89,7 +97,7 @@ $('#register-form').on('click', function(e) {
     let email = $('#email').val();
     let phoneNo = $('#phoneNo').val();
     let gender = $('#gender').val();
-    let companyName = $('#companyName').val();
+    let companyId = $('#companyId').val();
     let countryId = $('#countryId').val();
     let title = $('#title').val();
     let prefix = $('#prefix').val();
@@ -97,7 +105,7 @@ $('#register-form').on('click', function(e) {
 
     $('#error-first-name,#error-last-name,#error-email,#error-phone-no,#error-title').html('');
 
-    if(firstName == '' || lastName == '' || email == '' || phoneNo == '' || gender == '' || countryId == '' || title == '' || companyName == ''){
+    if(firstName == '' || lastName == '' || email == '' || phoneNo == '' || gender == '' || countryId == '' || title == '' || companyId == ''){
 
         if(firstName == ''){
             $("#error-first-name").html("Please fill first name");
@@ -121,16 +129,17 @@ $('#register-form').on('click', function(e) {
         if(title == ''){
             $("#error-title").html("Please fill job title");
         }
-        if(companyName == ''){
+        if(companyId == ''){
             $("#error-company").html("Please fill company name");
         }
 
     }else{
 
         swal({
-            title: "Checking...",
+        
+            title: "Saving...",
             text: "Please wait",
-            imageUrl: "loader.gif",
+            imageUrl: "https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif",
             showConfirmButton: false,
             allowOutsideClick: false
           });
@@ -144,28 +153,33 @@ $('#register-form').on('click', function(e) {
                 phoneNumber: phoneNo, 
                 gender: gender, 
                 email: email, 
-                companyName: companyName, 
+                companyId: companyId, 
                 countryId: countryId, 
                 title: title,
                 suffix: suffix,
                 prefix: prefix,
             },
             success: function (response) {
-                if (response.success) {
-                    swal({title: "Success", type: "success", text: response.message, showConfirmButton: true, allowEscapeKey: true});
+                try{
 
-                    $('#register-now').modal('hide');
-                    document.getElementById("form-reg").reset();
-
-                } else {
+                    if (response.success) {
+                        swal({title: "Success", type: "success", text: response.message, showConfirmButton: true, allowEscapeKey: true});
+    
+                        $('#register-now').modal('hide');
+                        document.getElementById("form-reg").reset();
+    
+                    } 
+                }catch(e){
+                    alert(e);
+                
                     swal({title: "Error", type: "error", text: response.message, showConfirmButton: true, allowEscapeKey: true});
                 }
             },
-            error: function () {
+            error: function (error) {
                 swal({
                     title: "Technical Error",
                     type:"error",
-                    text: "Please contact us through info@msd.go.tz",
+                    text: "Company already has two registered users. Please contact administrator via info.event@msd.go.tz",
                     showConfirmButton: true,
                     allowEscapeKey: true
                 });

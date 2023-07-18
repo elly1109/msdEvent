@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('lastName');
             $table->string('email');
             $table->enum('gender',['Male', 'Female'])->nullable();
-            $table->string('companyName');
             $table->foreignId('countryId')->constrained('nations')->onDelete('cascade');
+            $table->foreignId('companyId')->constrained('companies')->onDelete('cascade');
             $table->string('phoneNumber');
             $table->string('title')->nullable();
             $table->enum('prefix',['Prof.','Dr.', 'Mr.', 'Mrs.', 'Ms.','Rev.','Sir','Madam'])->nullable();

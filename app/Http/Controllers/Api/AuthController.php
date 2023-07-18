@@ -7,9 +7,9 @@ use App\Http\Controllers\Controller;
 use App\Models\RoleUser;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
-use PhpParser\Node\Stmt\Return_;
 use Spatie\Permission\Models\Role;
 
 class AuthController extends Controller
@@ -105,6 +105,28 @@ class AuthController extends Controller
             return $this->sendError('Error', $th->getMessage(), 401);
         }
     }
+
+
+     /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function dashboard(Request $request){
+        $nation_info = DB::table('suppliers')
+        ->select('nicename', DB::raw('count(*) as total'))
+        ->join('nations','suppliers.countryId','=','nations.id')
+        ->groupBy('nicename')
+        ->get();
+
+        return response()->json([
+            'success' => true, 
+            'data' => $nation_info
+        ]);
+    }
+
+
 
 
      /**

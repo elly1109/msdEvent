@@ -68,6 +68,7 @@
 
 <!-- Slimscroll JS -->
 <script src="{{asset('assets/js/jquery.slimscroll.min.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
 
 <!-- Custom JS -->
 <script src="{{asset('assets/js/app.js')}}"></script>
@@ -75,6 +76,7 @@
 
 <script src="{{asset('assets/js/toastr.min.js')}}"></script>
 <script src="{{asset('assets/js/sweetalert.min.js')}}"></script>
+<script src="{{asset('assets/js/chart.js')}}"></script>
 
 
 {{-- <script src="{{asset('assets/js/dashboard.js')}}"></script>

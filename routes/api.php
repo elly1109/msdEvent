@@ -25,7 +25,9 @@ Route::group(['middleware' => 'auth:sanctum'], function(){
     Route::get('user', function (Request $request) {
     return $request->user();
 });
-
+Route::get(
+    'get-suppliers-nations',[AuthController::class, 'dashboard']
+);
 Route::get('refresh', [AuthController::class, 'refresh']);
 Route::get('suppliers-list', [SupplierController::class, 'index']);
 Route::post('logout', [AuthController::class,'logoutUser']);

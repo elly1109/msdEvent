@@ -8,9 +8,6 @@ if((baseUrl=='http://localhost/')||(baseUrl=='https://localhost/')){
 }
 
 
-
-
-
 $('#office').on('change', function() {
     var office = this.value;
     if(office == ''){
