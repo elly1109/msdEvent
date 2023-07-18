@@ -32,9 +32,9 @@
         </style>
     </head>
     <body class="antialiased ">
-        <div class="con" style="width: 100%; height:70%; padding:4em 6rem;">
-            <div class="card context" style="margin: 3em">
-             <div class="card-header" style="margin-top: 2em">
+        <div class="con" style="width: 100%; height:70%; padding:2em 3rem;">
+            <div class="card context" style="margin: 2em">
+             <div class="card-header" style="margin-top: 4em">
                 <h3 class="text-primary">Registration Confirmation</h3>
             </div>
              <div class="card-body">
