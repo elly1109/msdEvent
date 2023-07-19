@@ -80,6 +80,7 @@ left: 1em;
 font-size: 2.5em;
 font-variation-settings: "wght" 500, "wdth" 75;
 letter-spacing: -.01em;
+color:'#';
 }
 
 .ticket__co-subname {

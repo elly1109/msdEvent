@@ -20,6 +20,12 @@ class Supplier extends Model
     }
 
 
+    public function companies()
+    {
+        return $this->belongsTo(Company::class, 'companyId','id');
+    }
+
+
 
 
 

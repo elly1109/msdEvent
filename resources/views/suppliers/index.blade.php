@@ -47,7 +47,7 @@
                                         <td>{{$z++}}</td>
                                         <td>{{ $supp['firstName'].' '.$supp['lastName'] }}</td>
                                         <td>{{ $supp['email'] }}</td>
-                                        <td>{{ $supp['companyName'] }}</td>
+                                        <td>{{ $supp->companies->companyName }}</td>
                                         <td>{{ $supp->nations->nicename}}</td>
                                         <td>{{ $supp['title'] }}</td>
                                         <td>{{ $supp['phoneNumber'] }}</td>

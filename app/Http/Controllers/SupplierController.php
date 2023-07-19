@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Company;
 use App\Models\Supplier;
 use App\Models\Nation;
 use Illuminate\Http\Request;
@@ -23,7 +24,8 @@ class SupplierController extends Controller
         if($user){
 
             $nations = Nation::get();
-            $suppliers = Supplier::with('nations')->get();
+            $companies = Company::get();
+            $suppliers = Supplier::with('nations','companies')->get();
             $z = 1;
             return view('suppliers.index',compact('suppliers','nations','z'));    
         }
