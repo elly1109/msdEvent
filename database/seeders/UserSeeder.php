@@ -15,13 +15,24 @@ class UserSeeder extends Seeder
     {
         //
 
-        DB::table('users')->insert([
+        DB::table('users')->insert(
+            [
             'name'=>'administrator',
             'username'=>'admin',
             'email'=>'admin@msd.go.tz',
             'password'=> bcrypt('MSD123msd')
 
-        ]);
+            ]
+    );
+
+        DB::table('users')->insert(
+            [
+                'name'=>'crdb',
+                'username'=>'crdb',
+                'email'=>'crdb@eventmsd.go.tz',
+                'password'=> bcrypt('ev@nt123')
+            ]
+    );
 
 
         
