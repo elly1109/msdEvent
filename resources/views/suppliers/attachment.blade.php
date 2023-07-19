@@ -171,7 +171,6 @@ text-align: center;
 
 .ticket {
 margin: 0 auto;
-transform: rotate(6deg);
 }
 
 .ticket__header {
