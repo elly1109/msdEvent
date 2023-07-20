@@ -1813,6 +1813,403 @@ class CompanySeeder extends Seeder
                 'address' => '',
             ]
         );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Mega Lifesciences',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Global Pharmacy Group',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Kwadu Mikoma Enterprises',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Stanley Tanzania Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Total Med-Lab Solutions Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Core Pharma',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Mshale Tanzania Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Goodman Pharma Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Gama Pharmaceuticals (T) Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Moraf Pharmaceuticals Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Burhani Procurement Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Generics & Specialities Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Anudha Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Widespectrum (T) Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Grants Care (T) Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Generics & Specialities Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'KAS Medics Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Majo Link Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Fuda Pharmaceutical Co. Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'K-Trend Investment Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Imara Horizon Company Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Crown Healthcare (T) Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'MACNAUGHTON Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Abacus Pharma (A) Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Najali Sanitary Pads TZ',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Hypermed Healthcare Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Indotan company Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Sciex Limited',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Karuda Healthcare C/O Norfolk International',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Qualtrust Company Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Synermed Pharmaceuticals (T) Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Biocare Health Products Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Harsh Pharmaceuticals Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'AstraZeneca',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'EACLC  Limited',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Labtech Tanzania Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Mokasi Médical Systems',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Indepth Scientific Company Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Prince Pharmaceutical Co. Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'SRI Balaji Pharma Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Planet Pharmaceutical Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'National Public Health Laboratory',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Phillips Pharma Group',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Portfolio and General Traders Company Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+
         // Company::firstOrCreate(['companyName'=>'']);
         // Company::firstOrCreate(['companyName'=>'']);
         // Company::firstOrCreate(['companyName'=>'']);
