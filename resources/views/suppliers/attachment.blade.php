@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang='en'><head><meta charset="UTF-8">
     <title>Title</title>
@@ -19,7 +18,7 @@ font-family: Arial, Helvetica, sans-serif;  font-size: 11px;
 }
 
 .watermark{
-background: url("https://portal.msd.go.tz/web/images/msd_login_logo.png");
+background: url("https://event.msd.go.tz/msdlogo.png");
 background-repeat: no-repeat;
 background-position:center;
 position: absolute;
@@ -171,6 +170,7 @@ text-align: center;
 
 .ticket {
 margin: 0 auto;
+transform: rotate(0deg);
 }
 
 .ticket__header {
@@ -241,10 +241,33 @@ order: 1;
       <span class="ticket__detail">18:00 - 21:30 hrs</span>
     </p>
   </div>
-  <div class="ticket__barcode">
-    {{ $qrcode }}
-    <p class="ticket-number"># {{$checkIn->orderNo}}</p>
-  </div>
+  <table>
+    <tr>
+      <td>
+        <div class="ticket__barcode">
+          {{ $qrcode }}
+          <p class="ticket-number"># {{$checkIn->orderNo}}</p>
+        </div>
+      </td>
+      <td style="padding-left: 10px;">
+        <br>
+          <img src="https://event.msd.go.tz/crdb-logo.png" height="50" />
+      </td>
+      <td style="padding-left: 10px;">
+        <br>
+          <img src="https://event.msd.go.tz/tz-nmb-logo.png" height="50" />
+      </td>
+      <td style="padding-left: 10px;">
+       <br>
+          <img src="https://event.msd.go.tz/tcb-logo.png" height="50" />
+      </td>
+      <td style="padding-left: 10px;">
+        <br>
+          <img src="https://event.msd.go.tz/msdlogo.png" height="50" />
+      </td>
+    </tr>
+  </table>
+
   </div>
   <p class="ticket__fine-print">This ticket cannot be transferred to another voyage</p>
   </div>
