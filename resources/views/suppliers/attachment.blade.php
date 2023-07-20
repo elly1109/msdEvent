@@ -226,7 +226,7 @@ order: 1;
 <div class="ticket__body">
   <p class="ticket__route">{{ $supp->prefix .' ' .$supp->firstName .' ' .$supp->lastName .' ' .$supp->suffix }} </p>
   <p class="ticket__description">{{ $supp->title }}</p>
-  <p class="ticket__description">{{$supp->companyName.', '.$supp->nations->iso}}</p>
+  <p class="ticket__description">{{$supp->companies->companyName.', '.$supp->nations->iso}}</p>
   <div class="ticket__timing">
     <p>
       <span class="u-upper ticket__small-label">Venue</span>
