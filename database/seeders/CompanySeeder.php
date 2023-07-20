@@ -1699,7 +1699,115 @@ class CompanySeeder extends Seeder
         Company::firstOrCreate(
 
             [
-                'companyName' => 'TPB',
+                'companyName' => 'Giant Surgical Pharmaceuticals',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'A.A. Pharmaceuticals',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Regal Pharmaceuticals',
+                'productName' => '',
+                'countryId' => 110,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Saintpio Supplies',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Inqaba Biotec East Africa Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Pacific Diagnostics',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Laborex Tanzania Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Gama Pharmaceuticals (T) Limited',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Phomas Diagnostics and Medical supplies Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Samiro Pharmaceuticals Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Salama Pharmaceuticals Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'RK pharmaceuticals (Tz) Limited',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Heko Pharmacy Limited',
                 'productName' => '',
                 'countryId' => 210,
                 'address' => '',
