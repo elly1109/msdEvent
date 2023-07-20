@@ -19,39 +19,37 @@ $html =
         }
       
         body {
+          font-family: Arial, Helvetica, sans-serif;  font-size: 11px;
+        }
 
-font-family: Arial, Helvetica, sans-serif;  font-size: 11px;
+        .watermark{
+          background: url("https://event.msd.go.tz/msdlogo.png");
+          background-repeat: no-repeat;
+          background-position:center;
+          position: absolute;
+          background-attachment: fixed;
+          width: 100%;
+          height: 50%;
+          margin: 0 auto;
+          z-index: -1;
+          opacity: 0.1
+        }
 
-}
+        .ticket-wrap {
+          text-align: center;
+          position:relative;
 
-.watermark{
-background: url("https://event.msd.go.tz/msdlogo.png");
-background-repeat: no-repeat;
-background-position:center;
-position: absolute;
-background-attachment: fixed;
-width: 100%;
-height: 50%;
-margin: 0 auto;
-z-index: -1;
-opacity: 0.1
-}
+        }
 
-.ticket-wrap {
-text-align: center;
-position:relative;
+        .ticket {
+          display: inline-block;
+          margin: 0 auto;
+          position:relative;
+          border: 2px solid #9facbc;
+          font-family: "Variable Bahnschrift", "FF DIN", "Franklin Gothic", "Helvetica Neue", sans-serif;
+          font-feature-settings: "kern" 1;
 
-}
-
-.ticket {
-display: inline-block;
-margin: 0 auto;
-position:relative;
-border: 2px solid #9facbc;
-font-family: "Variable Bahnschrift", "FF DIN", "Franklin Gothic", "Helvetica Neue", sans-serif;
-font-feature-settings: "kern" 1;
-
-}
+        }
 
 .ticket__header {
 margin: 0;
@@ -244,10 +242,10 @@ order: 1;
     ' ' .
     $data->suppliers->suffix .
     ' </p>
-      <p class="ticket__description">' .
+    <p class="ticket__description">' .
     $data->suppliers->title .
     '</p>
-      <p class="ticket__description">' .
+    <p class="ticket__description">' .
     $data->suppliers->companyName .
     ', ' .
     $data->suppliers->nations->iso .
@@ -298,9 +296,6 @@ order: 1;
       </td>
     </tr>
   </table>
-
-  
-    </div>
       </div>
       <p class="ticket__fine-print">This ticket cannot be transferred to another voyage</p>
       </div>
