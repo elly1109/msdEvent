@@ -1618,7 +1618,7 @@ class CompanySeeder extends Seeder
         );
         Company::firstOrCreate(
             [
-                'companyName' => 'TMDA',
+                'companyName' => 'Tanzania Medicines & Medical Devices Authority',
                 'productName' => '',
                 'countryId' => 210,
                 'address' => '',
@@ -1627,7 +1627,7 @@ class CompanySeeder extends Seeder
         Company::firstOrCreate(
 
             [
-                'companyName' => 'TRA',
+                'companyName' => 'Tanzania Revenue Authority',
                 'productName' => '',
                 'countryId' => 210,
                 'address' => '',
