@@ -14,6 +14,9 @@
                  <li>
                     <a href="{{url('checkin')}}"><i class="la la-server"></i> <span> Event</span></a>
                 </li>
+                 <li>
+                    <a href="{{url('companies')}}"><i class="la la-building"></i> <span> Companies</span></a>
+                </li>
 
                 
 

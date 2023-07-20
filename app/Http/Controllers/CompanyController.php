@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Nation;
 use App\Models\Company;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CompanyController extends Controller
 {
@@ -13,6 +15,15 @@ class CompanyController extends Controller
     public function index()
     {
         //
+        $user = Auth::user();
+        if($user){
+
+            $nations = Nation::get();
+            $companies = Company::with('nations')->get();
+            $z = 1;
+            return view('companies.index',compact('companies','nations','z'));    
+        }
+        return redirect('/');
     }
 
     /**

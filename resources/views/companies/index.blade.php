@@ -38,12 +38,13 @@
                             </thead>
                             <tbody>
 
-                                @foreach ($checkIn as $chk)
-                                    <tr class="{{$chk['checkedIn'] == '0'? 'text-danger': 'text-success'}}">
+                                @foreach ($companies as $comp)
+                                    <tr>
                                         <td>{{$z++}}</td>
-                                        <td>{{ $chk->suppliers->prefix.' '.$chk->suppliers->firstName.' '.$chk->suppliers->lastName.' '.$chk->suppliers->suffix }}</td>
-                                        <td>{{ $chk['orderNo'] }}</td>
-                                        <td>{{ $chk['checkedIn'] == '1'? 'Checked': 'Not Checked' }}</td>
+                                        <td>{{ $comp['companyName'] }}</td>
+                                        <td>{{ $comp['productName'] }}</td>
+                                        <td>{{ $comp->nations->nicename }}</td>
+                                        <td>{{ $comp['address'] }}</td>
                                         <td>
                                             <a href="#" data-original-title="download"><i class="fa fa-download text-navy"></i></a>
                                             <a href="#"data-original-title="edit"><i class="fa fa-edit text-warning"></i></a>

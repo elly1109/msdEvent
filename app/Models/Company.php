@@ -11,5 +11,12 @@ class Company extends Model
     protected $fillable = [
         'companyName',
         'countryId',
+        'productName',
+        'address',
     ];
+
+    public function nations()
+    {
+        return $this->belongsTo(Nation::class, 'countryId','id');
+    }
 }

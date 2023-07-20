@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\SupplierController;
 use App\Http\Controllers\EventController;
 use Illuminate\Support\Facades\Mail;
@@ -42,6 +43,7 @@ Route::group(['middleware' => 'auth'], function(){
     Route::get('dashboard',[AuthController::class,'dashboard']);
     Route::get('suppliers',[SupplierController::class,'index']);
     Route::get('checkin',[EventController::class,'index']);
+    Route::get('companies',[CompanyController::class,'index']);
     Route::get('qrcode/{id}',[EventController::class,'download']);
 
 
