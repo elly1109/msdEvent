@@ -79,7 +79,6 @@ left: 1em;
 font-size: 2.5em;
 font-variation-settings: "wght" 500, "wdth" 75;
 letter-spacing: -.01em;
-color:'#';
 }
 
 .ticket__co-subname {
@@ -238,7 +237,7 @@ order: 1;
     </p>
     <p>
       <span class="u-upper ticket__small-label">Time</span>
-      <span class="ticket__detail">18:00 - 21:30 hrs</span>
+      <span class="ticket__detail">1800 - 2150 hrs</span>
     </p>
   </div>
   <table>
