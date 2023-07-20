@@ -1669,6 +1669,42 @@ class CompanySeeder extends Seeder
                 'address' => '',
             ]
         );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'ZEDD Medics Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Paxone Group Ltd',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Kastipharm Limited',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'TPB',
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
         // Company::firstOrCreate(['companyName'=>'']);
         // Company::firstOrCreate(['companyName'=>'']);
         // Company::firstOrCreate(['companyName'=>'']);
