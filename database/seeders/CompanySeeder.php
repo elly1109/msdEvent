@@ -2300,6 +2300,14 @@ class CompanySeeder extends Seeder
                 'address' => '',
             ]
         );
+        Company::firstOrCreate(
+            [
+                'companyName' => "Ancoe Industry Corporation",
+                'productName' => '',
+                'countryId' => 38,
+                'address' => 'yw.h@outlook.com',
+            ]
+        );
 
         // Company::firstOrCreate(['companyName'=>'']);
         // Company::firstOrCreate(['companyName'=>'']);
