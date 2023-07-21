@@ -2308,6 +2308,14 @@ class CompanySeeder extends Seeder
                 'address' => 'yw.h@outlook.com',
             ]
         );
+        Company::firstOrCreate(
+            [
+                'companyName' => "Alfa Pharmaceuticals Ltd",
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
 
         // Company::firstOrCreate(['companyName'=>'']);
         // Company::firstOrCreate(['companyName'=>'']);

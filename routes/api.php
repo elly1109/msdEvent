@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\SupplierController;
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\EventController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +30,7 @@ Route::get(
     'get-suppliers-nations',[AuthController::class, 'dashboard']
 );
 Route::get('refresh', [AuthController::class, 'refresh']);
+Route::post('get-attendee/{id}', [EventController::class, 'show']);
 Route::get('suppliers-list', [SupplierController::class, 'index']);
 Route::post('logout', [AuthController::class,'logoutUser']);
 
