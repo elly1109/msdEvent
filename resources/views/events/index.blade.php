@@ -46,7 +46,19 @@
                                         <td>
                                             <a href="{{ url('qrcode/'.$chk['supplierId'].'')}}" data-original-title="download"><i class="fa fa-download text-navy"></i></a>
                                             <a href="#"><i class="fa fa-edit text-warning"></i></a>
+                                            @if($item->status==0)
+                                            <a class="btn btn-outline-warning btn-sm edit" title="Activate"  data-bs-toggle="modal" id="create-btn" 
+                                                        data-bs-target="#ActivateModal{{$chk['id']}}">
+                                                        <i class="fas fa-toggle-off"></i>
+                                                    </a>
+                                            @else
+                                        <a class="btn btn-outline-warning btn-sm edit" title="Deactivate"  data-bs-toggle="modal" id="create-btn" 
+                                                        data-bs-target="#ActivateModal{{$chk['id']}}">
+                                                        <i class="fas fa-toggle-on"></i>
+                                                    </a>
+                                        @endif
                                         </td>
+                                        @include('auth.events.activate')
                                     </tr>
                                 @endforeach 
 

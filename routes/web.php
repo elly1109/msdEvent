@@ -45,6 +45,7 @@ Route::group(['middleware' => 'auth'], function(){
     Route::get('checkin',[EventController::class,'index']);
     Route::get('companies',[CompanyController::class,'index']);
     Route::get('qrcode/{id}',[EventController::class,'download']);
+    Route::put('/activate/{id}', [EventController::class, 'activate'])->name('activate.event');
 
 
 });

@@ -74,9 +74,20 @@ class EventController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function activate($id)
     {
-        //
+        $user=User::find($id);
+        if($user->status==0)
+        {
+            $user->status=1;
+            $user->save();
+            return redirect()->back()->with('status','User is Activated');  
+        }elseif($user->status==1)
+        {
+            $user->status=0;
+            $user->save();
+            return redirect()->back()->with('status','User is inactive');
+        }
     }
 
     /**
