@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang='en'><head><meta charset="UTF-8">
     <title>Title</title>
@@ -18,7 +19,7 @@ font-family: Arial, Helvetica, sans-serif;  font-size: 11px;
 }
 
 .watermark{
-background: url("https://event.msd.go.tz/msdlogo.png");
+background: url("https://portal.msd.go.tz/web/images/msd_login_logo.png");
 background-repeat: no-repeat;
 background-position:center;
 position: absolute;
@@ -79,6 +80,7 @@ left: 1em;
 font-size: 2.5em;
 font-variation-settings: "wght" 500, "wdth" 75;
 letter-spacing: -.01em;
+color:'#';
 }
 
 .ticket__co-subname {
@@ -169,7 +171,6 @@ text-align: center;
 
 .ticket {
 margin: 0 auto;
-transform: rotate(0deg);
 }
 
 .ticket__header {
@@ -227,7 +228,7 @@ order: 1;
   <p class="ticket__description">{{ $supp->title }}</p>
   <p class="ticket__description">{{$supp->companies->companyName.', '.$supp->nations->iso}}</p>
   <div class="ticket__timing">
-    <p>
+  <p>
       <span class="u-upper ticket__small-label">Venue</span>
       <span class="ticket__detail">Johari Rotana, Dar es Salaam</span>
     </p>
@@ -237,36 +238,13 @@ order: 1;
     </p>
     <p>
       <span class="u-upper ticket__small-label">Time</span>
-      <span class="ticket__detail">1800 - 2150 hrs</span>
+      <span class="ticket__detail">1800hrs - 2130hrs</span>
     </p>
   </div>
-  <table>
-    <tr>
-      <td>
-        <div class="ticket__barcode">
-          {{ $qrcode }}
-          <p class="ticket-number"># {{$checkIn->orderNo}}</p>
-        </div>
-      </td>
-      <td style="padding-left: 10px;">
-        <br>
-          <img src="https://event.msd.go.tz/crdb-logo.png" height="50" />
-      </td>
-      <td style="padding-left: 10px;">
-        <br>
-          <img src="https://event.msd.go.tz/tz-nmb-logo.png" height="50" />
-      </td>
-      <td style="padding-left: 10px;">
-       <br>
-          <img src="https://event.msd.go.tz/tcb-logo.png" height="50" />
-      </td>
-      <td style="padding-left: 10px;">
-        <br>
-          <img src="https://event.msd.go.tz/msdlogo.png" height="50" />
-      </td>
-    </tr>
-  </table>
-
+  <div class="ticket__barcode">
+    {{ $qrcode }}
+    <p class="ticket-number"># {{$checkIn->orderNo}}</p>
+  </div>
   </div>
   <p class="ticket__fine-print">This ticket cannot be transferred to another voyage</p>
   </div>
