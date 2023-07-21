@@ -2284,6 +2284,22 @@ class CompanySeeder extends Seeder
                 'address' => 'nebulahealthcare@yahoo.com',
             ]
         );
+        Company::firstOrCreate(
+            [
+                'companyName' => "Abbott Rapid Diagnostics",
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
+        Company::firstOrCreate(
+            [
+                'companyName' => "Alkem Laboratories Ltd",
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
 
         // Company::firstOrCreate(['companyName'=>'']);
         // Company::firstOrCreate(['companyName'=>'']);
