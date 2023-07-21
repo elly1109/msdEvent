@@ -177,7 +177,7 @@ $html =
 
  .ticket {
   margin: 0 auto;
-  transform: rotate(6deg);
+  transform: rotate(0deg);
  }
 
  .ticket__header {
