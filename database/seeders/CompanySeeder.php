@@ -1432,10 +1432,10 @@ class CompanySeeder extends Seeder
         Company::firstOrCreate(
 
             [
-                'companyName' => 'Abbott GmbH',
+                'companyName' => 'Abbott GmbH ADD',
                 'productName' => 'Laboratory Supplies',
-                'countryId' => 58,
-                'address' => 'sanjay.rugnath@abbott.com',
+                'countryId' => 80,
+                'address' => 'info@encoremedics.com',
             ]
         );
         Company::firstOrCreate(
@@ -2239,7 +2239,49 @@ class CompanySeeder extends Seeder
                 'companyName' => "Bahari Pharmacy (T) Ltd",
                 'productName' => 'Pharmaceutical',
                 'countryId' => 210,
-                'address' => '',
+                'address' => 'mck@baharipharmacy.co.tz',
+            ]
+        );
+        Company::firstOrCreate(
+            [
+                'companyName' => "Kampa Health Products Ltd",
+                'productName' => 'Pharmaceutical',
+                'countryId' => 210,
+                'address' => 'info@kampa.co.tz',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Abbott GmbH AMD',
+                'productName' => '',
+                'countryId' => 80,
+                'address' => 'hudson.mghanga@abbott.com',
+            ]
+        );
+        Company::firstOrCreate(
+
+            [
+                'companyName' => 'Abbott GmbH ATM',
+                'productName' => '',
+                'countryId' => 80,
+                'address' => 'hildegalda.mnganya@abbott.com',
+            ]
+        );
+        Company::firstOrCreate(
+            [
+                'companyName' => "Encore Medics Ltd",
+                'productName' => 'Pharmaceutical',
+                'countryId' => 210,
+                'address' => 'info@encoremedics.com',
+            ]
+        );
+        Company::firstOrCreate(
+            [
+                'companyName' => "Nebula Healthcare Limited",
+                'productName' => '',
+                'countryId' => 210,
+                'address' => 'nebulahealthcare@yahoo.com',
             ]
         );
 
