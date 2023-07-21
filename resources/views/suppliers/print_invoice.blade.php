@@ -26,7 +26,6 @@ $html =
    }
 
    .watermark{
-	background: url("https://event.msd.go.tz/msdlogo.png");
 	background-repeat: no-repeat;
 	background-position:center;
 	position: absolute;
@@ -223,6 +222,7 @@ $html =
 <div class="l-col-right ticket-wrap " aria-label="A fake boat ticket demonstrating mixing font weights and widths">
   <div class="ticket  " aria-hidden="true">
     <div class="watermark">
+      <img src="https://event.msd.go.tz/msdlogo.png">
 		</div>
 
 
