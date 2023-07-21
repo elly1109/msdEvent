@@ -262,7 +262,7 @@ $html =
         </p>
         <p>
           <span class="u-upper ticket__small-label">Time</span>
-          <span class="ticket__detail">18:00 - 21:30 hrs</span>
+          <span class="ticket__detail">1800hrs - 2150hrs</span>
         </p>
       </div>
       <div class="ticket__barcode">
@@ -274,6 +274,7 @@ $html =
     $data->orderNo .
     '
    </p>
+   <img src="https://event.msd.go.tz/msdlogo.png" alt="logo">
       </div>
       </div>
       <p class="ticket__fine-print">This ticket cannot be transferred to another voyage</p>
