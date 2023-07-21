@@ -30,7 +30,7 @@ Route::get(
     'get-suppliers-nations',[AuthController::class, 'dashboard']
 );
 Route::get('refresh', [AuthController::class, 'refresh']);
-Route::post('get-attendee/{id}', [EventController::class, 'show']);
+Route::get('get-attendee/{id}', [EventController::class, 'show']);
 Route::get('suppliers-list', [SupplierController::class, 'index']);
 Route::post('logout', [AuthController::class,'logoutUser']);
 
