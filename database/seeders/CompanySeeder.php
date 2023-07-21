@@ -1663,7 +1663,7 @@ class CompanySeeder extends Seeder
         Company::firstOrCreate(
 
             [
-                'companyName' => 'TPB',
+                'companyName' => 'TCB',
                 'productName' => '',
                 'countryId' => 210,
                 'address' => '',
