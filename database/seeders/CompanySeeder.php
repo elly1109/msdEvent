@@ -2218,6 +2218,14 @@ class CompanySeeder extends Seeder
                 'address' => '',
             ]
         );
+        Company::firstOrCreate(
+            [
+                'companyName' => "Reddy's Pharma Ltd",
+                'productName' => 'Pharmaceutical',
+                'countryId' => 99,
+                'address' => '',
+            ]
+        );
 
         // Company::firstOrCreate(['companyName'=>'']);
         // Company::firstOrCreate(['companyName'=>'']);
