@@ -247,7 +247,7 @@ $html =
     $data->suppliers->title .
     '</p>
       <p class="ticket__description">' .
-    $data->suppliers->companyName .
+    $data->suppliers->companies->companyName .
     ', ' .
     $data->suppliers->nations->iso .
     '</p>
