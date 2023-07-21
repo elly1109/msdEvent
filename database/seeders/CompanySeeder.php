@@ -2316,6 +2316,14 @@ class CompanySeeder extends Seeder
                 'address' => '',
             ]
         );
+        Company::firstOrCreate(
+            [
+                'companyName' => "Hasafa Healthsciences Ltd",
+                'productName' => '',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
 
         // Company::firstOrCreate(['companyName'=>'']);
         // Company::firstOrCreate(['companyName'=>'']);
