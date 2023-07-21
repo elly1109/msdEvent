@@ -25,7 +25,7 @@ class SupplierController extends Controller
     public function __construct()
     {
         $this->middleware('guest');
-        $this->middleware('check.company.attendee.count:83,85,86,87,94,99,109,181,182,183,184,185,186')->only('store'); // Apply the middleware to the register method.
+        $this->middleware('check.company.attendee.count:83,85,86,87,94,99,109,181,182,183,184,185,186,210')->only('store'); // Apply the middleware to the register method.
     }
     /**
      * Display a listing of the resource.

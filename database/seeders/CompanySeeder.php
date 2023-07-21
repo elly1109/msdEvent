@@ -2234,6 +2234,14 @@ class CompanySeeder extends Seeder
                 'address' => '',
             ]
         );
+        Company::firstOrCreate(
+            [
+                'companyName' => "Bahari Pharmacy (T) Ltd",
+                'productName' => 'Pharmaceutical',
+                'countryId' => 210,
+                'address' => '',
+            ]
+        );
 
         // Company::firstOrCreate(['companyName'=>'']);
         // Company::firstOrCreate(['companyName'=>'']);
