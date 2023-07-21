@@ -2210,6 +2210,15 @@ class CompanySeeder extends Seeder
             ]
         );
 
+        Company::firstOrCreate(
+            [
+                'companyName' => 'Shandong Horse International Co. Ltd',
+                'productName' => 'Pharmaceutical',
+                'countryId' => 44,
+                'address' => '',
+            ]
+        );
+
         // Company::firstOrCreate(['companyName'=>'']);
         // Company::firstOrCreate(['companyName'=>'']);
         // Company::firstOrCreate(['companyName'=>'']);
