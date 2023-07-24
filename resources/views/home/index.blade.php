@@ -176,7 +176,7 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
             <p class="event_where">Johari Rotana, Dar es Salaam</p>
         </div>
 <div class="header_bottom-bg">
-<a class="btn btn-default btn-xl wow zoomIn paypal_res_modal" data-wow-delay="0.3s" href="#" data-toggle="modal" data-target="#register-now">RESERVE MY SEAT</a>
+{{-- <a class="btn btn-default btn-xl wow zoomIn paypal_res_modal" data-wow-delay="0.3s" href="#" data-toggle="modal" data-target="#register-now">RESERVE MY SEAT</a> --}}
 <!-- 
  Registration Popup (PAYPAL)
  ====================================== -->
@@ -356,9 +356,9 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
 
 		</div>
 	</div>
-<div class="countdown_wrap ">
+{{-- <div class="countdown_wrap ">
     <h6 class="countdown_title text-center">EVENT WILL START IN</h6>
-    {{-- TIP: You can change your event time below in the Same Format.  --> --}}
+    {{-- TIP: You can change your event time below in the Same Format.  --
     <ul class="countdown" data-event-date="21 July 2023 18:00:00">
         <li class="wow zoomIn" data-wow-delay="0s"> <span class="days">00</span>
             <p class="timeRefDays">days</p>
@@ -373,7 +373,9 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
             <p class="timeRefSeconds">seconds</p>
         </li>
     </ul>
-</div><div class="text-center">
+</div> --}}
+
+<div class="text-center">
 <!-- Add to Calendar Plugin. 
 	     For Customization, Visit https://addtocalendar.com/ -->
 	<span class="addtocalendar atc-style-theme">
@@ -782,7 +784,7 @@ h1, h2, h3, h4, h5, h6{font-display:swap;}
 		<div class="wpb_wrapper">
 			<h4 class="headline-support wow fadeInDown">Are you a Supplier or a Manufacturer?</h4>
 <h2 class="headline wow fadeInDown" data-wow-delay="0.1s">JOIN THE MEETING</h2>
-<div class="footer_bottom-bg"><a class="btn btn-success btn-xl wow zoomIn" href="#" data-wow-delay="0.3s" data-toggle="modal" data-target="#register-now">RESERVE MY SEAT</a></div>
+{{-- <div class="footer_bottom-bg"><a class="btn btn-success btn-xl wow zoomIn" href="#" data-wow-delay="0.3s" data-toggle="modal" data-target="#register-now">RESERVE MY SEAT</a></div> --}}
 
 		</div>
 	</div>
